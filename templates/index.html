@@ -1,0 +1,214 @@
+{% load static %}
+<html lang="en"><head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PCBUILDER</title>
+
+   <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+      @font-face {
+         font-family: "SpaceGrotesk";
+         src: url(./static/assets/fonts/SpaceGrotesk.ttf);
+      }
+
+      html {
+         height: 100%;
+      }
+
+      body {
+         margin: 0;
+         padding: 0;
+         width: 100%;
+         height: 100%;
+
+         font-family: "SpaceGrotesk";
+      }
+
+      *,
+      *::after,
+      *::before {
+         box-sizing: border-box;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+         margin: 0;
+      }
+
+      /* logo */
+
+      .logo {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         width: min-content;
+      }
+
+      .logo > h2 {
+         font-weight: 500;
+         color: #2283ff;
+      }
+
+      header {
+         width: 100%;
+         height: 80px;
+         font-size: 1.4rem;
+         margin-bottom: 30px;
+      }
+
+      header > .inner {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0 15px;
+      }
+
+      a {
+         text-decoration: none;
+         color: black;
+      }
+
+      .inner {
+         height: 100%;
+         width: 900px;
+         margin: 0 auto;
+
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+         gap: 30px;
+      }
+
+      @media (max-width: 900px) {
+         .inner {
+            width: 100%;
+         }
+
+         header > .inner {
+            flex-direction: column;
+         }
+
+         header {
+            height: auto;
+            padding: 15px;
+            background: #ddecff;
+         }
+      }
+
+      /* Intro */
+
+      .content {
+         width: 100%;
+         min-height: 700px;
+         padding: 15px;
+      }
+
+      .intro-heading {
+         font-size: 60px;
+         color: #2283ff;
+      }
+
+      .intro-text {
+         font-size: 22px;
+         text-align: center;
+         font-family: "Inter", sans-serif;
+      }
+
+      .intro-button {
+         padding: 18px 24px;
+         font-size: 24px;
+
+         font-family: "Inter", sans-serif;
+         border: none;
+         background: #2283ff;
+         color: white;
+         border-radius: 12px;
+         cursor: pointer;
+
+         transition: all 0.2s ease;
+      }
+
+      .intro-button:hover {
+         background: #559bf7;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <div class="inner">
+         <a href="catalog.html">Каталог</a>
+         <div class="logo">
+            <img src="./static/assets/icon.png" alt="logo" width="30%">
+            
+         </div>
+         <a href="contacts.html">Контакты</a>
+      </div>
+   </header>
+   <div class="content">
+      <div class="inner">
+         <img src="./static/assets/icon.png" alt="logo">
+         <h1 class="intro-heading">PCBUILDER</h1>
+         <p class="intro-text">
+            Добро пожаловать в PCBuilder – ваш надежный партнер в мире
+            компьютерных технологий! О нас PCBuilder – это интернет-магазин,
+            созданный тех, кто стремится к созданию и модернизации своих
+            компьютеров, либо для тех кто просто решил окунуться в мир
+            компьютерных технологий. Мы понимаем, что для создания идеального
+            компьютера необходимы высококачественные комплектующие и
+            профессиональный подход. Наша миссия – помочь вам собрать мощный,
+            надежный и производительный ПК, соответствующий всем вашим
+            требованиям и ожиданиям.
+         </p>
+         <a href="catalog.html" class="intro-button">Перейти к покупкам</a>
+      </div>
+   </div>
+<!-- Code injected by live-server -->
+<script>
+// <![CDATA[  <-- For SVG support
+if ('WebSocket' in window) {
+   (function () {
+      function refreshCSS() {
+         var sheets = [].slice.call(document.getElementsByTagName("link"));
+         var head = document.getElementsByTagName("head")[0];
+         for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+               var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+               elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+         }
+      }
+      var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+      var address = protocol + window.location.host + window.location.pathname + '/ws';
+      var socket = new WebSocket(address);
+      socket.onmessage = function (msg) {
+         if (msg.data == 'reload') window.location.reload();
+         else if (msg.data == 'refreshcss') refreshCSS();
+      };
+      if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+         console.log('Live reload enabled.');
+         sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+      }
+   })();
+}
+else {
+   console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+}
+// ]]>
+</script>
+
+
+</body></html>

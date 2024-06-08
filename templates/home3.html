@@ -1,0 +1,921 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="contacts.css">
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <button class="button">Главная</button>
+    </a>
+      <style>
+        .text-wrapper {
+            /* Дополнительные стили для кнопки, если необходимо */
+        }
+    </style>
+  </head>
+  <body>
+    <a href="catalog.html">
+        <button class="text-wrapper">Каталог</button>
+    </a>
+    <a href="contacts.html">
+      <a href="contacts.html">
+        <button class="div">Контакты</button>
+    </a>
+  </a>
+      <style>
+        .wcart {
+            width: 50px; /* Установите желаемую ширину */
+            height: auto; /* Высота будет масштабироваться автоматически, чтобы сохранить пропорции */
+        }
+    </style>
+  </head>
+  <body>
+    <a href="corzina.html">
+        <img class="wcart" src="app/static/images_product/wcart 1.png" alt="Корзина">
+    </a>
+  </body>
+  </html>
+      <img class="med-logo" src="app/static/images_product/med_logo 1.png">
+    </div>
+  
+    <title>PCBUILDER </title>
+  
+  
+    <div class="container">
+        
+        <!-- навигация -->
+          
+          <!-- тело сайта -->
+        <div class="row">
+            <!-- левое меню с фильтром по бренду -->
+            <div class="col-3 d-flex align-items-start justify-content-around">
+                    <!-- <div class="btn-group-vertical phoneFilter pt-15">
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="collapse" data-target=".cellWithPhone" aria-expanded="false" aria-controls="samsung apple sony huawei xiaomi">Все бренды</button>
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#samsung" aria-expanded="false" aria-controls="samsung">Samsung</button>
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#apple" aria-expanded="false" aria-controls="apple">Apple</button>
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#sony" aria-expanded="false" aria-controls="sony">Sony</button>
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#huawei" aria-expanded="false" aria-controls="huawei">Huawei</button>
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#xiaomi" aria-expanded="false" aria-controls="xiaomi">Xiaomi</button>
+                    </div> -->
+                    <ul class="list-group pt-15">
+                        <li class="list-group-item list-group-item-info text-white text-center">Фильтр</li>
+                        <li class="list-group-item">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input my-error" id="samsungSwitch" data-toggle="collapse" data-target="#samsung" aria-expanded="true" aria-controls="samsung">
+                                <label class="custom-control-label" for="samsungSwitch">Процессоры</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="appleSwitch" data-toggle="collapse" data-target="#apple" aria-expanded="false" aria-controls="apple">
+                                <label class="custom-control-label" for="appleSwitch">Видеокарты</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="sonySwitch" data-toggle="collapse" data-target="#sony" aria-expanded="false" aria-controls="sony">
+                                <label class="custom-control-label" for="sonySwitch">Оперативная Память</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="huaweiSwitch" data-toggle="collapse" data-target="#huawei" aria-expanded="false" aria-controls="huawei">
+                                <label class="custom-control-label" for="huaweiSwitch">Материнская плата</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="xiaomiSwitch" data-toggle="collapse" data-target="#xiaomi" aria-expanded="false" aria-controls="xiaomi">
+                                <label class="custom-control-label" for="xiaomiSwitch">Компьютеры</label>
+                            </div>
+                        </li>
+                        <script>
+                          document.addEventListener('DOMContentLoaded', function() {
+                              // Получаем все чекбоксы фильтра
+                              const checkboxes = document.querySelectorAll('.custom-control-input');
+                          
+                              // Добавляем обработчик события change для каждого чекбокса
+                              checkboxes.forEach(checkbox => {
+                                  checkbox.addEventListener('change', function() {
+                                      const targetId = this.getAttribute('data-target');
+                                      const targetElement = document.getElementById(targetId);
+                          
+                                      if (this.checked) {
+                                          // Показываем элемент, если чекбокс отмечен
+                                          targetElement.style.display = 'block';
+                                      } else {
+                                          // Скрываем элемент, если чекбокс не отмечен
+                                          targetElement.style.display = 'none';
+                                      }
+                                  });
+                              });
+                          });
+                          </script>
+                      </ul>    
+            </div>
+            <div class="col-9">
+                <!-- карусель с рекламой смартфона
+                <div id="carouselExampleIndicators" class="carousel slide pt-15" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/1note.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/2note.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/3note.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div> -->
+  
+                  <style>
+                    .phoneList {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                    
+                    .cellWithPhone {
+                        width: calc(33.33% - 20px); /* 33.33% для трех колонок с отступами */
+                        margin-bottom: 20px; /* Отступ между рядами */
+                    }
+                    </style>
+                <!-- блок со смартфонами -->
+                <div class="phoneList">
+                  <div class="cellWithPhone" id="samsung">
+                    <div class="card shadow" style="width: 16rem;">
+                        <div class="card-header pb-0"><h6 class="card-title">Процессор Intel Core i5-10400F OEM [LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2 х DDR4-2666 МГц, TDP 65 Вт]</h6></div>
+                        <img src="app/static/images_product/intelcore5.jpg" class="card-img-top" alt="Samsung">
+                        <div class="card-body pt-0">
+                          <h6 class="card-text">Цена: 9 299р</h6>
+                          <hr>
+                          <div class="buttonsPanel">
+                            <a href="#" class="btn btn-info btn-sm">Купить</a>
+                            <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#samsung-1" aria-expanded="false">Подробнее</button>
+                          </div>  
+                          <!-- выпадающее меню "подробнее"  -->
+                          <div class="collapse" id="samsung-1">
+                            <hr>
+                            <div class="card-text">
+                                <ul>
+                                    <li>6-ядерный процессор Intel Core i5-10400F OEM достойно проявит себя в составе игрового системного блока или производительного универсального ПК для дома или офиса. Базовая частота устройства равна 2.9 ГГц. Максимальная частота в турборежиме – 4.3 ГГц. Заметное влияние на производительность процессора оказывают 1.5-мегабайтный кэш L2 и 12-мегабайтный кэш L3. Модель совместима с оперативной памятью DDR4. Максимально поддерживаемый объем ОЗУ – 128 ГБ.
+                                      Явное преимущество процессор Intel Core i5-10400F OEM – малое тепловыделение. TDP устройства – 65 Вт. Показатель учитывается при выборе кулера. В комплекте устройство теплоотвода отсутствует: вам предстоит выбрать его самостоятельно. Качественное охлаждение процессора способен гарантировать низкопрофильный малошумный кулер. Максимальная рабочая температура CPU – 100 °C.</li>
+                                    
+                                </ul>
+                            </div>
+                          </div>
+                          <!-- конец выпадающего меню -->
+                        </div>
+                    </div>
+                </div>
+                <div class="cellWithPhone" id="samsung">
+                  <div class="card shadow" style="width: 16rem;">
+                      <div class="card-header pb-0"><h6 class="card-title">Процессор Intel Core i5-10400F OEM [LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2 х DDR4-2666 МГц, TDP 65 Вт]</h6></div>
+                      <img src="app/static/images_product/intelcore5.jpg" class="card-img-top" alt="Samsung">
+                      <div class="card-body pt-0">
+                        <h6 class="card-text">Цена: 9 299р</h6>
+                        <hr>
+                        <div class="buttonsPanel">
+                          <a href="#" class="btn btn-info btn-sm">Купить</a>
+                          <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#samsung-1" aria-expanded="false">Подробнее</button>
+                        </div>  
+                        <!-- выпадающее меню "подробнее"  -->
+                        <div class="collapse" id="samsung-1">
+                          <hr>
+                          <div class="card-text">
+                              <ul>
+                                  <li>6-ядерный процессор Intel Core i5-10400F OEM достойно проявит себя в составе игрового системного блока или производительного универсального ПК для дома или офиса. Базовая частота устройства равна 2.9 ГГц. Максимальная частота в турборежиме – 4.3 ГГц. Заметное влияние на производительность процессора оказывают 1.5-мегабайтный кэш L2 и 12-мегабайтный кэш L3. Модель совместима с оперативной памятью DDR4. Максимально поддерживаемый объем ОЗУ – 128 ГБ.
+                                    Явное преимущество процессор Intel Core i5-10400F OEM – малое тепловыделение. TDP устройства – 65 Вт. Показатель учитывается при выборе кулера. В комплекте устройство теплоотвода отсутствует: вам предстоит выбрать его самостоятельно. Качественное охлаждение процессора способен гарантировать низкопрофильный малошумный кулер. Максимальная рабочая температура CPU – 100 °C.</li>
+                                  
+                              </ul>
+                          </div>
+                        </div>
+                        <!-- конец выпадающего меню -->
+                      </div>
+                  </div>
+              </div>
+              <div class="cellWithPhone" id="samsung">
+                <div class="card shadow" style="width: 16rem;">
+                    <div class="card-header pb-0"><h6 class="card-title">Процессор Intel Core i5-10400F OEM [LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2 х DDR4-2666 МГц, TDP 65 Вт]</h6></div>
+                    <img src="app/static/images_product/intelcore5.jpg" class="card-img-top" alt="Samsung">
+                    <div class="card-body pt-0">
+                      <h6 class="card-text">Цена: 9 299р</h6>
+                      <hr>
+                      <div class="buttonsPanel">
+                        <a href="#" class="btn btn-info btn-sm">Купить</a>
+                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#samsung-1" aria-expanded="false">Подробнее</button>
+                      </div>  
+                      <!-- выпадающее меню "подробнее"  -->
+                      <div class="collapse" id="samsung-1">
+                        <hr>
+                        <div class="card-text">
+                            <ul>
+                                <li>6-ядерный процессор Intel Core i5-10400F OEM достойно проявит себя в составе игрового системного блока или производительного универсального ПК для дома или офиса. Базовая частота устройства равна 2.9 ГГц. Максимальная частота в турборежиме – 4.3 ГГц. Заметное влияние на производительность процессора оказывают 1.5-мегабайтный кэш L2 и 12-мегабайтный кэш L3. Модель совместима с оперативной памятью DDR4. Максимально поддерживаемый объем ОЗУ – 128 ГБ.
+                                  Явное преимущество процессор Intel Core i5-10400F OEM – малое тепловыделение. TDP устройства – 65 Вт. Показатель учитывается при выборе кулера. В комплекте устройство теплоотвода отсутствует: вам предстоит выбрать его самостоятельно. Качественное охлаждение процессора способен гарантировать низкопрофильный малошумный кулер. Максимальная рабочая температура CPU – 100 °C.</li>
+                                
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- конец выпадающего меню -->
+                    </div>
+                </div>
+            </div>
+            <div class="cellWithPhone" id="samsung">
+              <div class="card shadow" style="width: 16rem;">
+                  <div class="card-header pb-0"><h6 class="card-title">Процессор Intel Core i5-10400F OEM [LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2 х DDR4-2666 МГц, TDP 65 Вт]</h6></div>
+                  <img src="app/static/images_product/intelcore5.jpg" class="card-img-top" alt="Samsung">
+                  <div class="card-body pt-0">
+                    <h6 class="card-text">Цена: 9 299р</h6>
+                    <hr>
+                    <div class="buttonsPanel">
+                      <a href="#" class="btn btn-info btn-sm">Купить</a>
+                      <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#samsung-1" aria-expanded="false">Подробнее</button>
+                    </div>  
+                    <!-- выпадающее меню "подробнее"  -->
+                    <div class="collapse" id="samsung-1">
+                      <hr>
+                      <div class="card-text">
+                          <ul>
+                              <li>6-ядерный процессор Intel Core i5-10400F OEM достойно проявит себя в составе игрового системного блока или производительного универсального ПК для дома или офиса. Базовая частота устройства равна 2.9 ГГц. Максимальная частота в турборежиме – 4.3 ГГц. Заметное влияние на производительность процессора оказывают 1.5-мегабайтный кэш L2 и 12-мегабайтный кэш L3. Модель совместима с оперативной памятью DDR4. Максимально поддерживаемый объем ОЗУ – 128 ГБ.
+                                Явное преимущество процессор Intel Core i5-10400F OEM – малое тепловыделение. TDP устройства – 65 Вт. Показатель учитывается при выборе кулера. В комплекте устройство теплоотвода отсутствует: вам предстоит выбрать его самостоятельно. Качественное охлаждение процессора способен гарантировать низкопрофильный малошумный кулер. Максимальная рабочая температура CPU – 100 °C.</li>
+                              
+                          </ul>
+                      </div>
+                    </div>
+                    <!-- конец выпадающего меню -->
+                  </div>
+              </div>
+          </div>
+          <div class="cellWithPhone" id="samsung">
+            <div class="card shadow" style="width: 16rem;">
+                <div class="card-header pb-0"><h6 class="card-title">Процессор Intel Core i5-10400F OEM [LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2 х DDR4-2666 МГц, TDP 65 Вт]</h6></div>
+                <img src="app/static/images_product/intelcore5.jpg" class="card-img-top" alt="Samsung">
+                <div class="card-body pt-0">
+                  <h6 class="card-text">Цена: 9 299р</h6>
+                  <hr>
+                  <div class="buttonsPanel">
+                    <a href="#" class="btn btn-info btn-sm">Купить</a>
+                    <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#samsung-1" aria-expanded="false">Подробнее</button>
+                  </div>  
+                  <!-- выпадающее меню "подробнее"  -->
+                  <div class="collapse" id="samsung-1">
+                    <hr>
+                    <div class="card-text">
+                        <ul>
+                            <li>6-ядерный процессор Intel Core i5-10400F OEM достойно проявит себя в составе игрового системного блока или производительного универсального ПК для дома или офиса. Базовая частота устройства равна 2.9 ГГц. Максимальная частота в турборежиме – 4.3 ГГц. Заметное влияние на производительность процессора оказывают 1.5-мегабайтный кэш L2 и 12-мегабайтный кэш L3. Модель совместима с оперативной памятью DDR4. Максимально поддерживаемый объем ОЗУ – 128 ГБ.
+                              Явное преимущество процессор Intel Core i5-10400F OEM – малое тепловыделение. TDP устройства – 65 Вт. Показатель учитывается при выборе кулера. В комплекте устройство теплоотвода отсутствует: вам предстоит выбрать его самостоятельно. Качественное охлаждение процессора способен гарантировать низкопрофильный малошумный кулер. Максимальная рабочая температура CPU – 100 °C.</li>
+                            
+                        </ul>
+                    </div>
+                  </div>
+                  <!-- конец выпадающего меню -->
+                </div>
+            </div>
+        </div>
+                    <!-- ячейка отдельного смартфона -->
+                    <div class="cellWithPhone" id="samsung">
+                        <div class="card shadow" style="width: 16rem;">
+                            <div class="card-header pb-0"><h6 class="card-title">Процессор Intel Core i5-10400F OEM [LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2 х DDR4-2666 МГц, TDP 65 Вт]</h6></div>
+                            <img src="app/static/images_product/intelcore5.jpg" class="card-img-top" alt="Samsung">
+                            <div class="card-body pt-0">
+                              <h6 class="card-text">Цена: 9 299р</h6>
+                              <hr>
+                              <div class="buttonsPanel">
+                                <a href="#" class="btn btn-info btn-sm">Купить</a>
+                                <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#samsung-1" aria-expanded="false">Подробнее</button>
+                              </div>  
+                              <!-- выпадающее меню "подробнее"  -->
+                              <div class="collapse" id="samsung-1">
+                                <hr>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>6-ядерный процессор Intel Core i5-10400F OEM достойно проявит себя в составе игрового системного блока или производительного универсального ПК для дома или офиса. Базовая частота устройства равна 2.9 ГГц. Максимальная частота в турборежиме – 4.3 ГГц. Заметное влияние на производительность процессора оказывают 1.5-мегабайтный кэш L2 и 12-мегабайтный кэш L3. Модель совместима с оперативной памятью DDR4. Максимально поддерживаемый объем ОЗУ – 128 ГБ.
+                                          Явное преимущество процессор Intel Core i5-10400F OEM – малое тепловыделение. TDP устройства – 65 Вт. Показатель учитывается при выборе кулера. В комплекте устройство теплоотвода отсутствует: вам предстоит выбрать его самостоятельно. Качественное охлаждение процессора способен гарантировать низкопрофильный малошумный кулер. Максимальная рабочая температура CPU – 100 °C.</li>
+                                        
+                                    </ul>
+                                </div>
+                              </div>
+                              <!-- конец выпадающего меню -->
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="cellWithPhone" id="apple">
+                        <div class="card shadow" style="width: 16rem;">
+                            <div class="card-header pb-0"><h6 class="card-title">Видеокарта KFA2 GeForce RTX 4060 CORE Black [46NSL8MD9NXK] [PCI-E 4.0 8 ГБ GDDR6, 128 бит, 3 x DisplayPort, HDMI, GPU 1830 МГц]</h6></div>
+                            <img src="app/static/images_product/kfa.jpg" class="card-img-top" alt="iPhone">
+                            <div class="card-body pt-0"> 
+                              <h6 class="card-text">Цена: 33 999р <span class="badge badge-warning">-5%</span></h6>
+                              <hr>
+                              <div class="buttonsPanel">
+                                <a href="#" class="btn btn-info btn-sm">Купить</a>
+                                <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#apple-1" aria-expanded="false">Подробнее</button>
+                              </div>   
+                              <div class="collapse" id="apple-1">
+                                <hr>
+                                <div class="card-text">
+                                    <ul>
+                                        <li><b>Процессор:</b> Exynos 990</li>
+                                        
+                                    </ul>
+                                </div> 
+                              </div>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="cellWithPhone" id="apple">
+                        <div class="card shadow" style="width: 16rem;">
+                            <div class="card-header pb-0"><h6 class="card-title">Видеокарта GIGABYTE GeForce RTX 4070 WINDFORCE OC 12G [GV-N4070WF3OC-12GD] [PCI-E 4.0 12 ГБ GDDR6X, 192 бит, 3 x DisplayPort, HDMI, GPU 1920 МГц]</h6></div>
+                            <img src="app/static/images_product/giga.jpg" class="card-img-top" alt="iPhone">
+                            <div class="card-body pt-0">
+                              <h6 class="card-text">Цена:70 999р</h6>
+                              <hr>
+                              <div class="buttonsPanel">
+                                <a href="#" class="btn btn-info btn-sm">Купить</a>
+                                <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#apple-2" aria-expanded="false">Подробнее</button>
+                              </div>  
+                              <div class="collapse" id="apple-2">
+                                <hr>
+                                <div class="card-text">
+                                    <ul>
+                                      <li>Видеокарта GIGABYTE GeForce RTX 4070 WINDFORCE OC 12G [GV-N4070WF3OC-12GD] позволяет создать систему для работы с графикой и погружения в виртуальный игровой мир. Она содержит архитектуру Ada Lovelace с технологией NVIDIA DLSS 3 и трассировкой лучей, что обеспечивает детализацию, плавность и насыщенность изображения. В модели реализована возможность разгона частоты процессора до 2490 МГц.
+                                        Для отведения тепла применяется система охлаждения WINDFORCE. Она представлена тремя вентиляторами, радиатором и тепловыми трубками. Технология альтернативного вращения лопастей в противоположном направлении снижает турбулентность и повышает давление нагнетаемого воздушного потока. Функция 3D Active в условиях низкой нагрузки полностью останавливает вентиляторы и делает работу видеокарты бесшумной. На задней стороне GIGABYTE GeForce RTX 4070 WINDFORCE OC 12G установлена усиленная металлическая пластина, которая гарантирует прочность.</li>
+                                      
+                                    </ul>
+                                </div> 
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cellWithPhone" id="apple">
+                      <div class="card shadow" style="width: 16rem;">
+                        <div class="card-header pb-0"><h6 class="card-title" style="
+                          padding-bottom: 77px;
+                      ">Видеокарта Palit GeForce RTX 4070 Ti JetStream [NED407T019K9-1043J] </h6></div>
+                          <img src="app/static/images_product/palit.webp" class="card-img-top" alt="iPhone">
+                          <div class="card-body pt-0">
+                            <h6 class="card-text">Цена:81 999р</h6>
+                            <hr>
+                            <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#apple-2" aria-expanded="false">Подробнее</button>
+                            </div>  
+                            <div class="collapse" id="apple-2">
+                              <hr>
+                              <div class="card-text">
+                                  <ul>
+                                    <li>Видеокарта Palit GeForce RTX 4070 Ti JetStream [NED407T019K9-1043J] нацелена на высокую производительность при запуске компьютерных игр и ресурсоемких программ. Благодаря микроархитектуре Ada Lovelace с 12 ГБ памяти стандарта GDDR6X и тактовой частоте до 2610 МГц в режиме разгона она обеспечивает отзывчивость и плавность графики при создании контента и запуске игр. Технология трассировки лучей делает тени в темных и светлых участках изображения насыщенными.
+                                      Система охлаждения с тремя вентиляторами Gale Hunter стабильно охлаждает видеокарту. Аэродинамические лопасти формируют интенсивный воздушный поток при сниженном уровне шума. При работе в условиях низкой нагрузки активируется бесшумный режим «0 децибел». Из интерфейсов с боковой стороны видеокарты предлагаются 3 разъема DisplayPort и 1 разъем HDMI. Металлическая пластина на тыловой стороне делает видеокарту Palit GeForce RTX 4070 Ti JetStream устойчивой к деформации.</li>
+                                    
+                                  </ul>
+                              </div> 
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="cellWithPhone" id="apple">
+                    <div class="card shadow" style="width: 16rem;">
+                      <div class="card-header pb-0" style="
+                      /* padding-bottom: 20px; */
+                  "><h6 class="card-title" style="
+                      padding-bottom: 60px;
+                  ">Видеокарта MSI GeForce GTX 1650 D6 VENTUS XS OCV3 [GeForce GTX 1650 D6 VENTUS XS OCV3]</h6></div>                        <img src="app/static/images_product/msi.jpg" class="card-img-top" alt="iPhone">
+                        <div class="card-body pt-0">
+                          <h6 class="card-text">Цена:14 599р</h6>
+                          <hr>
+                          <div class="buttonsPanel">
+                            <a href="#" class="btn btn-info btn-sm">Купить</a>
+                            <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#apple-2" aria-expanded="false">Подробнее</button>
+                          </div>  
+                          <div class="collapse" id="apple-2">
+                            <hr>
+                            <div class="card-text">
+                                <ul>
+                                  <li>Видеокарта MSI GeForce GTX 1650 D6 VENTUS XS OCV3 [GeForce GTX 1650 D6 VENTUS XS OCV3] с размерами 179x112 мм подходит для интеграции в компактный системный блок. Благодаря архитектуре NVIDIA Turing она обеспечивает производительность, скорость и плавность графического контента. Процессор функционирует на частоте в пределах 1620 МГц при разгоне. Платформа графического ускорителя дополнена 4 ГБ памяти стандарта GDDR6.
+                                    Вывод изображения на внешние мониторы возможен с помощью 3 разъемов: по одному DisplayPort, DVI-D и HDMI. Кулер с двумя массивными вентиляторами и алюминиевым радиатором за счет стабильного отведения тепла поддерживает низкую температуру нагрева видеокарты. Утилита MSI Afterburner предусматривает разгон и мониторинг состояния MSI GeForce GTX 1650 D6 VENTUS XS OCV3.</li>
+                                  
+                                </ul>
+                            </div> 
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cellWithPhone" id="apple">
+                  <div class="card shadow" style="width: 16rem;">
+                    <div class="card-header pb-0"><h6 class="card-title" style="
+                      padding-bottom: 70px;
+                  ">Видеокарта KFA2 GeForce RTX 3050 X Black [35NSL8MD6YEK]</h6></div>                      <img src="app/static/images_product/kfa 2.webp" class="card-img-top" alt="iPhone">
+                      <div class="card-body pt-0">
+                        <h6 class="card-text">Цена:25 999р</h6>
+                        <hr>
+                        <div class="buttonsPanel">
+                          <a href="#" class="btn btn-info btn-sm">Купить</a>
+                          <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#apple-2" aria-expanded="false">Подробнее</button>
+                        </div>  
+                        <div class="collapse" id="apple-2">
+                          <hr>
+                          <div class="card-text">
+                              <ul>
+                                <li>Видеокарта KFA2 GeForce RTX 3050 X BLACK расширяет возможности игровых систем. Она поддерживает штатную частоту работы 1552 МГц. Повышение частоты в турборежиме до 1837 МГц обеспечивает прирост производительности, даже при работе с мощными графическими приложениями и играми. Видеопамять GDDR6 объемом 8 ГБ при сниженном энергопотреблении позволяет системе работать быстрее до двух раз.
+                                  Подключается видеокарта KFA2 GeForce RTX 3050 X BLACK через слот расширения PCI-E 4.0. К ней можно подключать одновременно до 4 мониторов, используя разъемы 3xDisplayPort, HDMI. Для получения более реалистичной графики применяется технология трассировки лучей.
+                                  Благодаря приложению NVIDIA Broadcast вы получаете высокое качество голосовых чатов, стримов, видеозвонков за счет устранения шумов, улучшения качества изображения, виртуального фона и инструментам на основе алгоритмов ИИ. Два вентилятора эффективно захватывают потоки воздуха и равномерно их распределяют, обеспечивая активное охлаждение всех элементов карты. Образ игровой сборки дополняет многоцветная подсветка вентиляторов.</li>
+                                
+                              </ul>
+                          </div> 
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="cellWithPhone" id="apple">
+                <div class="card shadow" style="width: 16rem;">
+                  <div class="card-header pb-0"><h6 class="card-title" style="
+                    padding-bottom: 50px;
+                ">Видеокарта MSI GeForce RTX 4070 SUPER VENTUS 2X OC [GeForce RTX 4070 SUPER 12G VENTUS 2X OC]</h6></div>                    <img src="app/static/images_product/msig.webp" class="card-img-top" alt="iPhone">
+                    <div class="card-body pt-0">
+                      <h6 class="card-text">Цена:78 999р</h6>
+                      <hr>
+                      <div class="buttonsPanel">
+                        <a href="#" class="btn btn-info btn-sm">Купить</a>
+                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#apple-2" aria-expanded="false">Подробнее</button>
+                      </div>  
+                      <div class="collapse" id="apple-2">
+                        <hr>
+                        <div class="card-text">
+                            <ul>
+                              <li>Видеокарта MSI GeForce RTX 4070 SUPER VENTUS 2X OC [GeForce RTX 4070 SUPER 12G VENTUS 2X OC] – оснащение для производительных игровых компьютеров. Быстродействие модели достаточно для использования большинства видеоигр на высоких настройках графики. При любых режимах работы системы видеоадаптер защищен от перегрева 2 вентиляторами TORX FAN 4.0. Тепловые трубки равномерно распределяют тепло по всей длине массивного радиатора. Пластина из никелированной меди гарантирует высокую интенсивность отвода тепла с поверхности GPU и чипов памяти.
+                                Графический процессор видеокарты MSI GeForce RTX 4070 SUPER VENTUS 2X OC [GeForce RTX 4070 SUPER 12G VENTUS 2X OC] – GeForce RTX 4070 SUPER. Штатная частота видеочипа равна 1980 МГц, а турбочастота – 2520 МГц. 224 тензорных ядра 4-го поколения ускоряют рендеринг. 7168 универсальных процессоров поддерживают высокую частоту кадров. 56 ядер 3-го поколения используются при аппаратном ускорении трассировки лучей. Максимальное энергопотребление видеокарты составляет 220 Вт. Производителем устройства рекомендован блок питания с мощностью от 650 Вт.</li>
+                              
+                            </ul>
+                        </div> 
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cellWithPhone" id="huawei">
+              <div class="card shadow" style="width: 16rem;">
+                  <div class="card-header pb-0"><h6 class="card-title">Материнская плата MSI PRO H610M-E DDR4</h6></div>
+                  <img src="app/static/images_product/msimath.webp" class="card-img-top" alt="Huawei">
+                  <div class="card-body pt-0">
+                    <h6 class="card-text">Цена: 6 999р</h6>
+                    <hr>
+                    <div class="buttonsPanel">
+                      <a href="#" class="btn btn-info btn-sm">Купить</a>
+                      <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#huawei-1" aria-expanded="false">Подробнее</button>
+                    </div>   
+                    <div class="collapse" id="huawei-1">
+                      <hr>
+                      <div class="card-text">
+                          <ul>
+                              <li>Материнская плата MSI PRO H610M-E DDR4 – надежная основа для построения офисного или домашнего ПК с универсальной производительностью. Данная плата основана на чипсете Intel H610 с процессорным разъемом LGA 1700 и обладает компактными размерами благодаря форм-фактору Micro-ATX. Для подключения необходимых комплектующих реализованы востребованные средства, среди которых отмечаются 2 слота под модули оперативной памяти объемом до 64 ГБ, по одному слоту расширения PCI-E x16 и PCI-E x1, 4 разъема SATA и 1 разъем M.2.
+  MSI PRO H610M-E оборудована сетевым адаптером 1 Гбит/с и 7.1-канальным звуковым кодеком. На панели ввода/вывода расположены порты и разъемы, включая USB и HDMI. Плата разработана с применением надежных компонентов и технологий, что служит гарантией стабильной и долговечной работы.</li>
+                              
+                          </ul>
+                      </div> 
+                    </div>  
+                  </div>
+              </div>
+          </div>
+          <div class="cellWithPhone" id="huawei">
+            <div class="card shadow" style="width: 16rem;">
+                <div class="card-header pb-0"><h6 class="card-title">Материнская плата MSI PRO H610M-E DDR4</h6></div>
+                <img src="app/static/images_product/msimath.webp" class="card-img-top" alt="Huawei">
+                <div class="card-body pt-0">
+                  <h6 class="card-text">Цена: 6 999р</h6>
+                  <hr>
+                  <div class="buttonsPanel">
+                    <a href="#" class="btn btn-info btn-sm">Купить</a>
+                    <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#huawei-1" aria-expanded="false">Подробнее</button>
+                  </div>   
+                  <div class="collapse" id="huawei-1">
+                    <hr>
+                    <div class="card-text">
+                        <ul>
+                            <li>Материнская плата MSI PRO H610M-E DDR4 – надежная основа для построения офисного или домашнего ПК с универсальной производительностью. Данная плата основана на чипсете Intel H610 с процессорным разъемом LGA 1700 и обладает компактными размерами благодаря форм-фактору Micro-ATX. Для подключения необходимых комплектующих реализованы востребованные средства, среди которых отмечаются 2 слота под модули оперативной памяти объемом до 64 ГБ, по одному слоту расширения PCI-E x16 и PCI-E x1, 4 разъема SATA и 1 разъем M.2.
+  MSI PRO H610M-E оборудована сетевым адаптером 1 Гбит/с и 7.1-канальным звуковым кодеком. На панели ввода/вывода расположены порты и разъемы, включая USB и HDMI. Плата разработана с применением надежных компонентов и технологий, что служит гарантией стабильной и долговечной работы.</li>
+                            
+                        </ul>
+                    </div> 
+                  </div>  
+                </div>
+            </div>
+        </div>
+        <div class="cellWithPhone" id="huawei">
+          <div class="card shadow" style="width: 16rem;">
+              <div class="card-header pb-0"><h6 class="card-title">Материнская плата MSI PRO H610M-E DDR4</h6></div>
+              <img src="app/static/images_product/msimath.webp" class="card-img-top" alt="Huawei">
+              <div class="card-body pt-0">
+                <h6 class="card-text">Цена: 6 999р</h6>
+                <hr>
+                <div class="buttonsPanel">
+                  <a href="#" class="btn btn-info btn-sm">Купить</a>
+                  <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#huawei-1" aria-expanded="false">Подробнее</button>
+                </div>   
+                <div class="collapse" id="huawei-1">
+                  <hr>
+                  <div class="card-text">
+                      <ul>
+                          <li>Материнская плата MSI PRO H610M-E DDR4 – надежная основа для построения офисного или домашнего ПК с универсальной производительностью. Данная плата основана на чипсете Intel H610 с процессорным разъемом LGA 1700 и обладает компактными размерами благодаря форм-фактору Micro-ATX. Для подключения необходимых комплектующих реализованы востребованные средства, среди которых отмечаются 2 слота под модули оперативной памяти объемом до 64 ГБ, по одному слоту расширения PCI-E x16 и PCI-E x1, 4 разъема SATA и 1 разъем M.2.
+  MSI PRO H610M-E оборудована сетевым адаптером 1 Гбит/с и 7.1-канальным звуковым кодеком. На панели ввода/вывода расположены порты и разъемы, включая USB и HDMI. Плата разработана с применением надежных компонентов и технологий, что служит гарантией стабильной и долговечной работы.</li>
+                          
+                      </ul>
+                  </div> 
+                </div>  
+              </div>
+          </div>
+      </div>
+      <div class="cellWithPhone" id="huawei">
+        <div class="card shadow" style="width: 16rem;">
+            <div class="card-header pb-0"><h6 class="card-title">Материнская плата MSI PRO H610M-E DDR4</h6></div>
+            <img src="app/static/images_product/msimath.webp" class="card-img-top" alt="Huawei">
+            <div class="card-body pt-0">
+              <h6 class="card-text">Цена: 6 999р</h6>
+              <hr>
+              <div class="buttonsPanel">
+                <a href="#" class="btn btn-info btn-sm">Купить</a>
+                <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#huawei-1" aria-expanded="false">Подробнее</button>
+              </div>   
+              <div class="collapse" id="huawei-1">
+                <hr>
+                <div class="card-text">
+                    <ul>
+                        <li>Материнская плата MSI PRO H610M-E DDR4 – надежная основа для построения офисного или домашнего ПК с универсальной производительностью. Данная плата основана на чипсете Intel H610 с процессорным разъемом LGA 1700 и обладает компактными размерами благодаря форм-фактору Micro-ATX. Для подключения необходимых комплектующих реализованы востребованные средства, среди которых отмечаются 2 слота под модули оперативной памяти объемом до 64 ГБ, по одному слоту расширения PCI-E x16 и PCI-E x1, 4 разъема SATA и 1 разъем M.2.
+  MSI PRO H610M-E оборудована сетевым адаптером 1 Гбит/с и 7.1-канальным звуковым кодеком. На панели ввода/вывода расположены порты и разъемы, включая USB и HDMI. Плата разработана с применением надежных компонентов и технологий, что служит гарантией стабильной и долговечной работы.</li>
+                        
+                    </ul>
+                </div> 
+              </div>  
+            </div>
+        </div>
+    </div>
+    <div class="cellWithPhone" id="huawei">
+      <div class="card shadow" style="width: 16rem;">
+          <div class="card-header pb-0"><h6 class="card-title">Материнская плата MSI PRO H610M-E DDR4</h6></div>
+          <img src="app/static/images_product/msimath.webp" class="card-img-top" alt="Huawei">
+          <div class="card-body pt-0">
+            <h6 class="card-text">Цена: 6 999р</h6>
+            <hr>
+            <div class="buttonsPanel">
+              <a href="#" class="btn btn-info btn-sm">Купить</a>
+              <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#huawei-1" aria-expanded="false">Подробнее</button>
+            </div>   
+            <div class="collapse" id="huawei-1">
+              <hr>
+              <div class="card-text">
+                  <ul>
+                      <li>Материнская плата MSI PRO H610M-E DDR4 – надежная основа для построения офисного или домашнего ПК с универсальной производительностью. Данная плата основана на чипсете Intel H610 с процессорным разъемом LGA 1700 и обладает компактными размерами благодаря форм-фактору Micro-ATX. Для подключения необходимых комплектующих реализованы востребованные средства, среди которых отмечаются 2 слота под модули оперативной памяти объемом до 64 ГБ, по одному слоту расширения PCI-E x16 и PCI-E x1, 4 разъема SATA и 1 разъем M.2.
+  MSI PRO H610M-E оборудована сетевым адаптером 1 Гбит/с и 7.1-канальным звуковым кодеком. На панели ввода/вывода расположены порты и разъемы, включая USB и HDMI. Плата разработана с применением надежных компонентов и технологий, что служит гарантией стабильной и долговечной работы.</li>
+                      
+                  </ul>
+              </div> 
+            </div>  
+          </div>
+      </div>
+  </div>
+                    <div class="cellWithPhone" id="huawei">
+                        <div class="card shadow" style="width: 16rem;">
+                            <div class="card-header pb-0"><h6 class="card-title">Материнская плата MSI PRO H610M-E DDR4</h6></div>
+                            <img src="app/static/images_product/msimath.webp" class="card-img-top" alt="Huawei">
+                            <div class="card-body pt-0">
+                              <h6 class="card-text">Цена: 6 999р</h6>
+                              <hr>
+                              <div class="buttonsPanel">
+                                <a href="#" class="btn btn-info btn-sm">Купить</a>
+                                <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#huawei-1" aria-expanded="false">Подробнее</button>
+                              </div>   
+                              <div class="collapse" id="huawei-1">
+                                <hr>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>Материнская плата MSI PRO H610M-E DDR4 – надежная основа для построения офисного или домашнего ПК с универсальной производительностью. Данная плата основана на чипсете Intel H610 с процессорным разъемом LGA 1700 и обладает компактными размерами благодаря форм-фактору Micro-ATX. Для подключения необходимых комплектующих реализованы востребованные средства, среди которых отмечаются 2 слота под модули оперативной памяти объемом до 64 ГБ, по одному слоту расширения PCI-E x16 и PCI-E x1, 4 разъема SATA и 1 разъем M.2.
+  MSI PRO H610M-E оборудована сетевым адаптером 1 Гбит/с и 7.1-канальным звуковым кодеком. На панели ввода/вывода расположены порты и разъемы, включая USB и HDMI. Плата разработана с применением надежных компонентов и технологий, что служит гарантией стабильной и долговечной работы.</li>
+                                        
+                                    </ul>
+                                </div> 
+                              </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellWithPhone" id="sony">
+                      <div class="card shadow" style="width: 16rem;">
+                          <div class="card-header pb-0"><h6 class="card-title">Оперативная память Kingston FURY Beast Black [KF432C16BBK2/32] 32 ГБ <span class="badge badge-success">New</span></h6></div>
+                          <img src="app/static/images_product/ksi.webp" class="card-img-top" alt="Sony">
+                          <div class="card-body pt-0">
+                            <h6 class="card-text">Цена: 8 799р</h6>
+                            <hr>
+                            <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#sony-1" aria-expanded="false">Подробнее</button>
+                            </div> 
+                            <div class="collapse" id="sony-1">
+                              <hr>
+                              <div class="card-text">
+                                  <ul>
+                                    <li>Оперативная память Kingston FURY Beast Black выделяется оригинальным оформлением и мощными характеристиками, поэтому станет надежным дополнением геймерского или оверклокерского ПК. Она представлена в виде комплекта из двух модулей памяти объемом по 16 ГБ, которые работают на частоте 3200 МГц и отличаются низкими задержками. Для эффективного отвода тепла от чипов памяти установлены алюминиевые радиаторы специальной формы. Благодаря тестированию на совместимость и надежность достигается исключительная стабильность функционирования Kingston FURY Beast.</li>
+                                    
+                                  </ul>
+                              </div> 
+                            </div>  
+                          </div>
+                      </div>
+                  </div>
+                  <div class="cellWithPhone" id="sony">
+                    <div class="card shadow" style="width: 16rem;">
+                        <div class="card-header pb-0"><h6 class="card-title">Оперативная память Kingston FURY Beast Black [KF432C16BBK2/32] 32 ГБ <span class="badge badge-success">New</span></h6></div>
+                        <img src="app/static/images_product/ksi.webp" class="card-img-top" alt="Sony">
+                        <div class="card-body pt-0">
+                          <h6 class="card-text">Цена: 8 799р</h6>
+                          <hr>
+                          <div class="buttonsPanel">
+                            <a href="#" class="btn btn-info btn-sm">Купить</a>
+                            <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#sony-1" aria-expanded="false">Подробнее</button>
+                          </div> 
+                          <div class="collapse" id="sony-1">
+                            <hr>
+                            <div class="card-text">
+                                <ul>
+                                  <li>Оперативная память Kingston FURY Beast Black выделяется оригинальным оформлением и мощными характеристиками, поэтому станет надежным дополнением геймерского или оверклокерского ПК. Она представлена в виде комплекта из двух модулей памяти объемом по 16 ГБ, которые работают на частоте 3200 МГц и отличаются низкими задержками. Для эффективного отвода тепла от чипов памяти установлены алюминиевые радиаторы специальной формы. Благодаря тестированию на совместимость и надежность достигается исключительная стабильность функционирования Kingston FURY Beast.</li>
+                                  
+                                </ul>
+                            </div> 
+                          </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="cellWithPhone" id="sony">
+                  <div class="card shadow" style="width: 16rem;">
+                      <div class="card-header pb-0"><h6 class="card-title">Оперативная память Kingston FURY Beast Black [KF432C16BBK2/32] 32 ГБ <span class="badge badge-success">New</span></h6></div>
+                      <img src="app/static/images_product/ksi.webp" class="card-img-top" alt="Sony">
+                      <div class="card-body pt-0">
+                        <h6 class="card-text">Цена: 8 799р</h6>
+                        <hr>
+                        <div class="buttonsPanel">
+                          <a href="#" class="btn btn-info btn-sm">Купить</a>
+                          <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#sony-1" aria-expanded="false">Подробнее</button>
+                        </div> 
+                        <div class="collapse" id="sony-1">
+                          <hr>
+                          <div class="card-text">
+                              <ul>
+                                <li>Оперативная память Kingston FURY Beast Black выделяется оригинальным оформлением и мощными характеристиками, поэтому станет надежным дополнением геймерского или оверклокерского ПК. Она представлена в виде комплекта из двух модулей памяти объемом по 16 ГБ, которые работают на частоте 3200 МГц и отличаются низкими задержками. Для эффективного отвода тепла от чипов памяти установлены алюминиевые радиаторы специальной формы. Благодаря тестированию на совместимость и надежность достигается исключительная стабильность функционирования Kingston FURY Beast.</li>
+                                
+                              </ul>
+                          </div> 
+                        </div>  
+                      </div>
+                  </div>
+              </div>
+              <div class="cellWithPhone" id="sony">
+                <div class="card shadow" style="width: 16rem;">
+                    <div class="card-header pb-0"><h6 class="card-title">Оперативная память Kingston FURY Beast Black [KF432C16BBK2/32] 32 ГБ <span class="badge badge-success">New</span></h6></div>
+                    <img src="app/static/images_product/ksi.webp" class="card-img-top" alt="Sony">
+                    <div class="card-body pt-0">
+                      <h6 class="card-text">Цена: 8 799р</h6>
+                      <hr>
+                      <div class="buttonsPanel">
+                        <a href="#" class="btn btn-info btn-sm">Купить</a>
+                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#sony-1" aria-expanded="false">Подробнее</button>
+                      </div> 
+                      <div class="collapse" id="sony-1">
+                        <hr>
+                        <div class="card-text">
+                            <ul>
+                              <li>Оперативная память Kingston FURY Beast Black выделяется оригинальным оформлением и мощными характеристиками, поэтому станет надежным дополнением геймерского или оверклокерского ПК. Она представлена в виде комплекта из двух модулей памяти объемом по 16 ГБ, которые работают на частоте 3200 МГц и отличаются низкими задержками. Для эффективного отвода тепла от чипов памяти установлены алюминиевые радиаторы специальной формы. Благодаря тестированию на совместимость и надежность достигается исключительная стабильность функционирования Kingston FURY Beast.</li>
+                              
+                            </ul>
+                        </div> 
+                      </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="cellWithPhone" id="sony">
+              <div class="card shadow" style="width: 16rem;">
+                  <div class="card-header pb-0"><h6 class="card-title">Оперативная память Kingston FURY Beast Black [KF432C16BBK2/32] 32 ГБ <span class="badge badge-success">New</span></h6></div>
+                  <img src="app/static/images_product/ksi.webp" class="card-img-top" alt="Sony">
+                  <div class="card-body pt-0">
+                    <h6 class="card-text">Цена: 8 799р</h6>
+                    <hr>
+                    <div class="buttonsPanel">
+                      <a href="#" class="btn btn-info btn-sm">Купить</a>
+                      <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#sony-1" aria-expanded="false">Подробнее</button>
+                    </div> 
+                    <div class="collapse" id="sony-1">
+                      <hr>
+                      <div class="card-text">
+                          <ul>
+                            <li>Оперативная память Kingston FURY Beast Black выделяется оригинальным оформлением и мощными характеристиками, поэтому станет надежным дополнением геймерского или оверклокерского ПК. Она представлена в виде комплекта из двух модулей памяти объемом по 16 ГБ, которые работают на частоте 3200 МГц и отличаются низкими задержками. Для эффективного отвода тепла от чипов памяти установлены алюминиевые радиаторы специальной формы. Благодаря тестированию на совместимость и надежность достигается исключительная стабильность функционирования Kingston FURY Beast.</li>
+                            
+                          </ul>
+                      </div> 
+                    </div>  
+                  </div>
+              </div>
+          </div>
+                    <div class="cellWithPhone" id="sony">
+                      <div class="card shadow" style="width: 16rem;">
+                          <div class="card-header pb-0"><h6 class="card-title">Оперативная память Kingston FURY Beast Black [KF432C16BBK2/32] 32 ГБ <span class="badge badge-success">New</span></h6></div>
+                          <img src="app/static/images_product/ksi.webp" class="card-img-top" alt="Sony">
+                          <div class="card-body pt-0">
+                            <h6 class="card-text">Цена: 8 799р</h6>
+                            <hr>
+                            <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#sony-1" aria-expanded="false">Подробнее</button>
+                            </div> 
+                            <div class="collapse" id="sony-1">
+                              <hr>
+                              <div class="card-text">
+                                  <ul>
+                                    <li>Оперативная память Kingston FURY Beast Black выделяется оригинальным оформлением и мощными характеристиками, поэтому станет надежным дополнением геймерского или оверклокерского ПК. Она представлена в виде комплекта из двух модулей памяти объемом по 16 ГБ, которые работают на частоте 3200 МГц и отличаются низкими задержками. Для эффективного отвода тепла от чипов памяти установлены алюминиевые радиаторы специальной формы. Благодаря тестированию на совместимость и надежность достигается исключительная стабильность функционирования Kingston FURY Beast.</li>
+                                    
+                                  </ul>
+                              </div> 
+                            </div>  
+                          </div>
+                      </div>
+                  </div>
+                  <div class="cellWithPhone" id="xiaomi"> 
+                    <div class="card shadow" style="width: 16rem;">
+                        <div class="card-header pb-0"><h6 class="card-title">ПК ARDOR GAMING NEO M143</h6></div>
+                        <img src="app/static/images_product/pc.webp" class="card-img-top" alt="Xiaomi">
+                        <div class="card-body pt-0">
+                          <h6 class="card-text">Цена: 70 299р</h6>
+                          <hr>
+                          <div class="buttonsPanel">
+                            <a href="#" class="btn btn-info btn-sm">Купить</a>
+                            <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#xiaomi-1" aria-expanded="false">Подробнее</button>
+                          </div>  
+                          <div class="collapse" id="xiaomi-1">
+                            <hr>
+                            <div class="card-text">
+                                <ul>
+                                    <li>ПК ARDOR GAMING NEO M143 в черном корпусе форм-фактора Mid-Tower не имеет предустановленной операционной системы, чтобы вы могли самостоятельно установить привычную ОС и нужное программное обеспечение. Конфигурация модели собрана на базе 6-ядерного процессора Intel Core i5-12400F, который способен одновременно обрабатывать до 12 вычислительных потоков информации. Вместе с 16 ГБ оперативной памяти чипсет обеспечит систему быстродействием при запуске требовательных игр и многозадачном режиме работы.
+                                      ПК ARDOR GAMING NEO M143 предусматривает дискретную видеокарту NVIDIA GeForce RTX 3050 с 8 ГБ видеопамяти GDDR6-типа, чтобы вы могли насладиться реалистичной игровой графикой на экране монитора. На боковой стенке корпуса предусмотрено прозрачное окно, которое откроет завораживающий вид на комплектующие с включенной подсветкой. Энергопотребление мощных компонентов компьютера обеспечивает блок питания мощностью 500 Вт с сертификацией 80 PLUS Standart.</li>
+                                   
+                                </ul>
+                            </div> 
+                          </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="cellWithPhone" id="xiaomi"> 
+                  <div class="card shadow" style="width: 16rem;">
+                      <div class="card-header pb-0"><h6 class="card-title">ПК ARDOR GAMING NEO M143</h6></div>
+                      <img src="app/static/images_product/pc.webp" class="card-img-top" alt="Xiaomi">
+                      <div class="card-body pt-0">
+                        <h6 class="card-text">Цена: 70 299р</h6>
+                        <hr>
+                        <div class="buttonsPanel">
+                          <a href="#" class="btn btn-info btn-sm">Купить</a>
+                          <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#xiaomi-1" aria-expanded="false">Подробнее</button>
+                        </div>  
+                        <div class="collapse" id="xiaomi-1">
+                          <hr>
+                          <div class="card-text">
+                              <ul>
+                                  <li>ПК ARDOR GAMING NEO M143 в черном корпусе форм-фактора Mid-Tower не имеет предустановленной операционной системы, чтобы вы могли самостоятельно установить привычную ОС и нужное программное обеспечение. Конфигурация модели собрана на базе 6-ядерного процессора Intel Core i5-12400F, который способен одновременно обрабатывать до 12 вычислительных потоков информации. Вместе с 16 ГБ оперативной памяти чипсет обеспечит систему быстродействием при запуске требовательных игр и многозадачном режиме работы.
+                                    ПК ARDOR GAMING NEO M143 предусматривает дискретную видеокарту NVIDIA GeForce RTX 3050 с 8 ГБ видеопамяти GDDR6-типа, чтобы вы могли насладиться реалистичной игровой графикой на экране монитора. На боковой стенке корпуса предусмотрено прозрачное окно, которое откроет завораживающий вид на комплектующие с включенной подсветкой. Энергопотребление мощных компонентов компьютера обеспечивает блок питания мощностью 500 Вт с сертификацией 80 PLUS Standart.</li>
+                                 
+                              </ul>
+                          </div> 
+                        </div>   
+                      </div>
+                  </div>
+              </div>
+              <div class="cellWithPhone" id="xiaomi"> 
+                <div class="card shadow" style="width: 16rem;">
+                    <div class="card-header pb-0"><h6 class="card-title">ПК ARDOR GAMING NEO M143</h6></div>
+                    <img src="app/static/images_product/pc.webp" class="card-img-top" alt="Xiaomi">
+                    <div class="card-body pt-0">
+                      <h6 class="card-text">Цена: 70 299р</h6>
+                      <hr>
+                      <div class="buttonsPanel">
+                        <a href="#" class="btn btn-info btn-sm">Купить</a>
+                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#xiaomi-1" aria-expanded="false">Подробнее</button>
+                      </div>  
+                      <div class="collapse" id="xiaomi-1">
+                        <hr>
+                        <div class="card-text">
+                            <ul>
+                                <li>ПК ARDOR GAMING NEO M143 в черном корпусе форм-фактора Mid-Tower не имеет предустановленной операционной системы, чтобы вы могли самостоятельно установить привычную ОС и нужное программное обеспечение. Конфигурация модели собрана на базе 6-ядерного процессора Intel Core i5-12400F, который способен одновременно обрабатывать до 12 вычислительных потоков информации. Вместе с 16 ГБ оперативной памяти чипсет обеспечит систему быстродействием при запуске требовательных игр и многозадачном режиме работы.
+                                  ПК ARDOR GAMING NEO M143 предусматривает дискретную видеокарту NVIDIA GeForce RTX 3050 с 8 ГБ видеопамяти GDDR6-типа, чтобы вы могли насладиться реалистичной игровой графикой на экране монитора. На боковой стенке корпуса предусмотрено прозрачное окно, которое откроет завораживающий вид на комплектующие с включенной подсветкой. Энергопотребление мощных компонентов компьютера обеспечивает блок питания мощностью 500 Вт с сертификацией 80 PLUS Standart.</li>
+                               
+                            </ul>
+                        </div> 
+                      </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="cellWithPhone" id="xiaomi"> 
+              <div class="card shadow" style="width: 16rem;">
+                  <div class="card-header pb-0"><h6 class="card-title">ПК ARDOR GAMING NEO M143</h6></div>
+                  <img src="app/static/images_product/pc.webp" class="card-img-top" alt="Xiaomi">
+                  <div class="card-body pt-0">
+                    <h6 class="card-text">Цена: 70 299р</h6>
+                    <hr>
+                    <div class="buttonsPanel">
+                      <a href="#" class="btn btn-info btn-sm">Купить</a>
+                      <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#xiaomi-1" aria-expanded="false">Подробнее</button>
+                    </div>  
+                    <div class="collapse" id="xiaomi-1">
+                      <hr>
+                      <div class="card-text">
+                          <ul>
+                              <li>ПК ARDOR GAMING NEO M143 в черном корпусе форм-фактора Mid-Tower не имеет предустановленной операционной системы, чтобы вы могли самостоятельно установить привычную ОС и нужное программное обеспечение. Конфигурация модели собрана на базе 6-ядерного процессора Intel Core i5-12400F, который способен одновременно обрабатывать до 12 вычислительных потоков информации. Вместе с 16 ГБ оперативной памяти чипсет обеспечит систему быстродействием при запуске требовательных игр и многозадачном режиме работы.
+                                ПК ARDOR GAMING NEO M143 предусматривает дискретную видеокарту NVIDIA GeForce RTX 3050 с 8 ГБ видеопамяти GDDR6-типа, чтобы вы могли насладиться реалистичной игровой графикой на экране монитора. На боковой стенке корпуса предусмотрено прозрачное окно, которое откроет завораживающий вид на комплектующие с включенной подсветкой. Энергопотребление мощных компонентов компьютера обеспечивает блок питания мощностью 500 Вт с сертификацией 80 PLUS Standart.</li>
+                             
+                          </ul>
+                      </div> 
+                    </div>   
+                  </div>
+              </div>
+          </div>
+          <div class="cellWithPhone" id="xiaomi"> 
+            <div class="card shadow" style="width: 16rem;">
+                <div class="card-header pb-0"><h6 class="card-title">ПК ARDOR GAMING NEO M143</h6></div>
+                <img src="app/static/images_product/pc.webp" class="card-img-top" alt="Xiaomi">
+                <div class="card-body pt-0">
+                  <h6 class="card-text">Цена: 70 299р</h6>
+                  <hr>
+                  <div class="buttonsPanel">
+                    <a href="#" class="btn btn-info btn-sm">Купить</a>
+                    <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#xiaomi-1" aria-expanded="false">Подробнее</button>
+                  </div>  
+                  <div class="collapse" id="xiaomi-1">
+                    <hr>
+                    <div class="card-text">
+                        <ul>
+                            <li>ПК ARDOR GAMING NEO M143 в черном корпусе форм-фактора Mid-Tower не имеет предустановленной операционной системы, чтобы вы могли самостоятельно установить привычную ОС и нужное программное обеспечение. Конфигурация модели собрана на базе 6-ядерного процессора Intel Core i5-12400F, который способен одновременно обрабатывать до 12 вычислительных потоков информации. Вместе с 16 ГБ оперативной памяти чипсет обеспечит систему быстродействием при запуске требовательных игр и многозадачном режиме работы.
+                              ПК ARDOR GAMING NEO M143 предусматривает дискретную видеокарту NVIDIA GeForce RTX 3050 с 8 ГБ видеопамяти GDDR6-типа, чтобы вы могли насладиться реалистичной игровой графикой на экране монитора. На боковой стенке корпуса предусмотрено прозрачное окно, которое откроет завораживающий вид на комплектующие с включенной подсветкой. Энергопотребление мощных компонентов компьютера обеспечивает блок питания мощностью 500 Вт с сертификацией 80 PLUS Standart.</li>
+                           
+                        </ul>
+                    </div> 
+                  </div>   
+                </div>
+            </div>
+        </div>
+                    <div class="cellWithPhone" id="xiaomi"> 
+                        <div class="card shadow" style="width: 16rem;">
+                            <div class="card-header pb-0"><h6 class="card-title">ПК ARDOR GAMING NEO M143</h6></div>
+                            <img src="app/static/images_product/pc.webp" class="card-img-top" alt="Xiaomi">
+                            <div class="card-body pt-0">
+                              <h6 class="card-text">Цена: 70 299р</h6>
+                              <hr>
+                              <div class="buttonsPanel">
+                                <a href="#" class="btn btn-info btn-sm">Купить</a>
+                                <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#xiaomi-1" aria-expanded="false">Подробнее</button>
+                              </div>  
+                              <div class="collapse" id="xiaomi-1">
+                                <hr>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>ПК ARDOR GAMING NEO M143 в черном корпусе форм-фактора Mid-Tower не имеет предустановленной операционной системы, чтобы вы могли самостоятельно установить привычную ОС и нужное программное обеспечение. Конфигурация модели собрана на базе 6-ядерного процессора Intel Core i5-12400F, который способен одновременно обрабатывать до 12 вычислительных потоков информации. Вместе с 16 ГБ оперативной памяти чипсет обеспечит систему быстродействием при запуске требовательных игр и многозадачном режиме работы.
+                                          ПК ARDOR GAMING NEO M143 предусматривает дискретную видеокарту NVIDIA GeForce RTX 3050 с 8 ГБ видеопамяти GDDR6-типа, чтобы вы могли насладиться реалистичной игровой графикой на экране монитора. На боковой стенке корпуса предусмотрено прозрачное окно, которое откроет завораживающий вид на комплектующие с включенной подсветкой. Энергопотребление мощных компонентов компьютера обеспечивает блок питания мощностью 500 Вт с сертификацией 80 PLUS Standart.</li>
+                                       
+                                    </ul>
+                                </div> 
+                              </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- пагинация -->
+                <div class="row paginations">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary disabled">&lt;&lt;</button>
+                        <button type="button" class="btn btn-info" onclick="window.location.href='home.html'">1</button>
+                        <button type="button" class="btn btn-secondary" onclick="window.location.href='home2.html'">2</button>
+                        <button type="button" class="btn btn-secondary" onclick="window.location.href='home3.html'">3</button>
+                        <button type="button" class="btn btn-secondary">&gt;&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- футер сайта -->
+        <div class="row footerOfSite shadow">Разработано Никитой Галуновым. 2024 ©</div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Code inject--></body></html>

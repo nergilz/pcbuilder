@@ -1,0 +1,362 @@
+<html><head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="globals.css">
+   <link rel="stylesheet" href="corzina.css">
+
+   <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+      @font-face {
+         font-family: "SpaceGrotesk";
+         src: url(./assets/fonts/SpaceGrotesk.ttf);
+      }
+
+      html {
+         height: 100%;
+      }
+
+      body {
+         margin: 0;
+         padding: 0;
+         width: 100%;
+         height: 100%;
+
+         font-family: "SpaceGrotesk";
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+         margin: 0;
+      }
+
+      *,
+      *::after,
+      *::before {
+         box-sizing: border-box;
+      }
+
+      /* logo */
+
+      .logo {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         width: min-content;
+      }
+
+      .logo > h2 {
+         font-weight: 500;
+         color: white;
+      }
+
+      header {
+         width: 100%;
+         height: 80px;
+         font-size: 1.4rem;
+         margin-bottom: 30px;
+
+         background: #2283ff;
+         color: white;
+      }
+
+      header > .inner {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0 15px;
+      }
+
+      header nav {
+         display: flex;
+         flex-direction: row;
+         gap: 5rem;
+      }
+
+      a {
+         text-decoration: none;
+         color: white;
+      }
+
+      .inner {
+         height: 100%;
+         width: 1200px;
+         margin: 0 auto;
+
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
+         gap: 30px;
+      }
+
+      @media (max-width: 1200px) {
+         .inner {
+            width: 100%;
+         }
+      }
+
+      @media (max-width: 850px) {
+         header nav {
+            flex-direction: column;
+            gap: 1.2rem;
+         }
+
+         header > .inner {
+            flex-direction: column;
+         }
+
+         header {
+            height: auto;
+            padding: 15px;
+         }
+      }
+
+      .content {
+         padding: 20px;
+      }
+
+      /* Cart */
+
+      .cart {
+         width: 100%;
+         display: flex;
+         gap: 10px;
+      }
+
+      .items {
+         width: 70%;
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+      }
+
+      .item {
+         padding: 20px;
+         background: #f5f5f5;
+         border: 1px solid #8f8f8f;
+         border-radius: 12px;
+
+         display: flex;
+         gap: 15px;
+      }
+
+      .item > img {
+         border-radius: 6px;
+         width: 160px;
+      }
+
+      .item > div {
+         width: calc(100% - 15px - 160px);
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+      }
+
+      .details {
+         width: 30%;
+         padding: 20px;
+         background: #f5f5f5;
+         border: 1px solid #8f8f8f;
+         border-radius: 12px;
+
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+      }
+
+      .details input {
+         padding: 10px 15px;
+         border: none;
+         background: #d7e8ff;
+
+         border: 0.5px solid #2283ff;
+         border-radius: 6px;
+      }
+
+      .details button {
+         padding: 10px 15px;
+         border: none;
+         background: #2283ff;
+         color: white;
+         font-size: 1.2rem;
+         cursor: pointer;
+
+         border-radius: 6px;
+      }
+
+      /* Settings */
+
+      .item .settings {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         margin-top: 10px;
+      }
+
+      .item .settings > .price {
+         color: #2283ff;
+         font-size: 1.2rem;
+      }
+
+      .item .settings button {
+         width: 30px;
+         height: 30px;
+         background: #b4d5ff;
+         border: none;
+         border: 1px solid #72afff;
+         border-radius: 4px;
+      }
+
+      .item .settings input {
+         height: 100%;
+         text-align: center;
+
+         background: #b4d5ff;
+         border: none;
+         border: 1px solid #72afff;
+         border-radius: 4px;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <div class="inner">
+         <div class="logo">
+            <img src="./assets/icon.png" alt="logo" width="30%">
+            <h2>PCBUILDER</h2>
+         </div>
+         <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="corzina.html">
+               <img src="./assets/shopping_cart.svg" alt="">
+            </a>
+         </nav>
+      </div>
+   </header>
+   <div class="content">
+      <div class="inner">
+         <h1>Корзина</h1>
+         <div class="cart">
+            <div class="items">
+               <div class="item">
+                  <img src="https://c.dns-shop.ru/thumb/st4/fit/500/500/bbd34c68dedfd816f74f2e1c8982ee28/a456db21c4184e22b75ccb0c07c70c520aacaa20efed5a50da6e0c6c3d17c2d7.jpg.webp" alt="item">
+                  <div>
+                     <h2>
+                        Процессор Intel Core i7-14700KF OEM [LGA 1700, 8P x
+                        3.4 ГГц, 12E x 2.5 ГГц, L2 - 28 МБ, L3 - 33 МБ, 2 х
+                        DDR4, DDR5-5600 МГц, TDP 253 Вт]
+                     </h2>
+                     <p>
+                        Процессор Intel Core i7-14700KF OEM в общей сложности
+                        оснащается 20 вычислительными ядрами, из которых 8
+                        являются производительными, а 12 –
+                        энергоэффективными.
+                     </p>
+                     <div class="settings">
+                        <p class="price">46 999р</p>
+                        <div class="counter">
+                           <button class="minus" id="first_min">-</button>
+                           <input type="text" id="first" value="1">
+                           <button class="plus" id="first_plus">+</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="https://c.dns-shop.ru/thumb/st1/fit/500/500/219d22cc55fe79a6844fd5297b591219/d647bc3e9cda8b9133a9e48ea2cb835730c701270170801fd0e66164c8e0484b.png.webp" class="card-img-top" alt="iPhone">
+                  <div>
+                     <h2>Видеокарта PowerColor AMD Radeon RX 7800 XT Hellhound [RX7800XT 16G-L/OC]</h2>
+                     <p>Видеокарта PowerColor AMD Radeon RX 7800 XT Hellhound разработана для модернизации игрового ПК.</p>
+                     <div class="settings">
+                        <p class="price">60 999р</p>
+                        <div class="counter">
+                           <button class="minus" id="two_min">-</button>
+                           <input type="text" id="two" value="1">
+                           <button class="plus" id="two_plus">+</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="https://c.dns-shop.ru/thumb/st1/fit/500/500/b57e180b45f8e9b2493df7c87b52351d/6ba965b6b4063901d7f25197914a6c0255a3abf36bcee0f55d6621321c1c9120.png.webp" class="card-img-top" alt="Huawei">
+                  <div>
+                     <h2>Материнская плата ASRock B760 Pro RS</h2>
+                     <p>Материнская плата ASRock B760 Pro RS способна обеспечить продуктивную и стабильную работу в различных требовательных программах.</p>
+                     <div class="settings">
+                        <p class="price">15 999р</p>
+                        <div class="counter">
+                           <button class="minus" id="three_min">-</button>
+                           <input type="text" id="three" value="1">
+                           <button class="plus" id="three_plus">+</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="details">
+               <h1>Давайте будем на связи</h1>
+               <input type="text" placeholder="Номер телефона">
+               <input type="text" placeholder="Город">
+               <input type="text" placeholder="Улица">
+               <input type="text" placeholder="Дом">
+               <p><b>Услуги доставки:</b> уточняется</p>
+               <p>
+                  Наш менеджер свяжется с вами в ближайшее время для
+                  уточнения всех деталей вашего заказа.
+               </p>
+               <h1 style="margin-top: auto">Итого: 170.000 руб.</h1>
+               <button>Оформить заказ</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script type="module" src="./corzina.js"></script>
+<!-- Code injected by live-server -->
+<script>
+// <![CDATA[  <-- For SVG support
+if ('WebSocket' in window) {
+   (function () {
+      function refreshCSS() {
+         var sheets = [].slice.call(document.getElementsByTagName("link"));
+         var head = document.getElementsByTagName("head")[0];
+         for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+               var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+               elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+         }
+      }
+      var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+      var address = protocol + window.location.host + window.location.pathname + '/ws';
+      var socket = new WebSocket(address);
+      socket.onmessage = function (msg) {
+         if (msg.data == 'reload') window.location.reload();
+         else if (msg.data == 'refreshcss') refreshCSS();
+      };
+      if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+         console.log('Live reload enabled.');
+         sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+      }
+   })();
+}
+else {
+   console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+}
+// ]]>
+</script>
+
+
+</body></html>

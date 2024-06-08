@@ -1,0 +1,1988 @@
+{% load static %}
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="globals.css" />
+      <link rel="stylesheet" href="contacts.css" />
+   </head>
+
+   <body>
+      <div class="header">
+         <a href="index.html">
+            <button class="button">Главная</button>
+         </a>
+         <a href="catalog.html">
+            <button class="text-wrapper">Каталог</button>
+         </a>
+         <a href="contacts.html">
+            <div class="text-wrapper-4">Контакты</div>
+         </a>
+         <a href="contacts.html">
+            <button class="div">Контакты</button>
+         </a>
+         <a href="corzina.html">
+            <img
+               class="wcart"
+               src="app/static/images_product/wcart 1.png"
+               alt="Корзина"
+            />
+         </a>
+         <a href="index.html">
+            <img
+               class="med-logo"
+               src="app/static/images_product/med_logo 1.png"
+               alt="Медицинский логотип"
+            />
+         </a>
+      </div>
+
+      <div class="container">
+         <!-- навигация -->
+
+         <!-- тело сайта -->
+         <div class="row">
+            <!-- левое меню с фильтром по бренду -->
+            <div class="col-3 d-flex align-items-start justify-content-around">
+               <!-- <div class="btn-group-vertical phoneFilter pt-15">
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="collapse" data-target=".cellWithPhone" aria-expanded="false" aria-controls="samsung apple sony huawei xiaomi">Все бренды</button>
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#samsung" aria-expanded="false" aria-controls="samsung">Samsung</button>
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#apple" aria-expanded="false" aria-controls="apple">Apple</button>
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#sony" aria-expanded="false" aria-controls="sony">Sony</button>
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#huawei" aria-expanded="false" aria-controls="huawei">Huawei</button>
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#xiaomi" aria-expanded="false" aria-controls="xiaomi">Xiaomi</button>
+                    </div> -->
+               <ul class="list-group pt-15">
+                  <li
+                     class="list-group-item list-group-item-info text-white text-center"
+                  >
+                     Фильтр
+                  </li>
+                  <li class="list-group-item">
+                     <div class="custom-control custom-switch">
+                        <input
+                           type="checkbox"
+                           class="custom-control-input my-error"
+                           id="samsungSwitch"
+                           data-toggle="collapse"
+                           data-target="#samsung"
+                           aria-expanded="true"
+                           aria-controls="samsung"
+                        />
+                        <label class="custom-control-label" for="samsungSwitch"
+                           >Процессоры</label
+                        >
+                     </div>
+                  </li>
+                  <li class="list-group-item">
+                     <div class="custom-control custom-switch">
+                        <input
+                           type="checkbox"
+                           class="custom-control-input"
+                           id="appleSwitch"
+                           data-toggle="collapse"
+                           data-target="#apple"
+                           aria-expanded="true"
+                           aria-controls="apple"
+                        />
+                        <label class="custom-control-label" for="appleSwitch"
+                           >Видеокарты</label
+                        >
+                     </div>
+                  </li>
+                  <li class="list-group-item">
+                     <div class="custom-control custom-switch">
+                        <input
+                           type="checkbox"
+                           class="custom-control-input"
+                           id="sonySwitch"
+                           data-toggle="collapse"
+                           data-target="#sony"
+                           aria-expanded="true"
+                           aria-controls="sony"
+                        />
+                        <label class="custom-control-label" for="sonySwitch"
+                           >Оперативная Память</label
+                        >
+                     </div>
+                  </li>
+                  <li class="list-group-item">
+                     <div class="custom-control custom-switch">
+                        <input
+                           type="checkbox"
+                           class="custom-control-input"
+                           id="huaweiSwitch"
+                           data-toggle="collapse"
+                           data-target="#huawei"
+                           aria-expanded="true"
+                           aria-controls="huawei"
+                        />
+                        <label class="custom-control-label" for="huaweiSwitch"
+                           >Материнская плата</label
+                        >
+                     </div>
+                  </li>
+                  <li class="list-group-item">
+                     <div class="custom-control custom-switch">
+                        <input
+                           type="checkbox"
+                           class="custom-control-input"
+                           id="xiaomiSwitch"
+                           data-toggle="collapse"
+                           data-target="#xiaomi"
+                           aria-expanded="true"
+                           aria-controls="xiaomi"
+                        />
+                        <label class="custom-control-label" for="xiaomiSwitch"
+                           >Компьютеры</label
+                        >
+                     </div>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="col-9">
+               <div class="phoneList">
+                  <div class="cellWithPhone" id="samsung">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Процессор Intel Core i5-14600K OEM...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\i5.jpg"
+                           class="card-img-top"
+                           alt="Samsung"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 34 499р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#samsung-1"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <!-- выпадающее меню "подробнее"  -->
+                           <div class="collapse" id="samsung-1">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       14-ядерный процессор Intel Core i5-14600K
+                                       OEM рассчитан на оснащение игровых и
+                                       мощных универсальных системных блоков.
+                                       Модель имеет 6 производительных и 8
+                                       энергоэффективных ядер. Последние снижают
+                                       энергопотребление CPU при работе с
+                                       невысокой нагрузкой. Базовая частота
+                                       процессора равна 3.5 ГГц, а максимальная
+                                       частота в турборежиме – 5.3 ГГц.
+                                       Устройство имеет свободный множитель и
+                                       адаптировано к штатному разгону. CPU
+                                       базируется на архитектуре Raptor Lake и
+                                       произведен по техпроцессу Intel 7.
+                                       Процессор Intel Core i5-14600K OEM
+                                       оснащен графическим ядром Intel UHD
+                                       Graphics 770. GPU работает на частотах до
+                                       1550 МГц. Производительность видеоядра
+                                       позволяет использовать большинство игр на
+                                       максимальных или средних настройках. В
+                                       модели реализована поддержка технологии
+                                       Intel GNA, которая ускоряет вычисления на
+                                       базе искусственного интеллекта. Процессор
+                                       совместим с памятью DDR4 и DDR5.
+                                       Максимально допустимый объем ОЗУ равен
+                                       192 ГБ. Возможно использование модулей с
+                                       коррекцией ошибок. OEM-комплектация
+                                       процессора означает отсутствие кулера.
+                                       При выборе системы охлаждения учитывается
+                                       TDP 181 Вт.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!-- конец выпадающего меню -->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="samsung">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Процессор Intel Core i7-14700KF OEM...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\i7.jpg"
+                           class="card-img-top"
+                           alt="Samsung"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 46 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#samsung-2"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <!-- выпадающее меню "подробнее"  -->
+                           <div class="collapse" id="samsung-2">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Процессор Intel Core i7-14700KF OEM в
+                                       общей сложности оснащается 20
+                                       вычислительными ядрами, из которых 8
+                                       являются производительными, а 12 –
+                                       энергоэффективными. Этот компонент вы
+                                       сможете использовать при постройке
+                                       домашней станции или игрового системного
+                                       блока. Вы сможете смонтировать его на
+                                       материнскую плату, оснащенной разъемом
+                                       подключения LGA1700. При базовой тактовой
+                                       частоте 3.4 ГГц ЦПУ поддерживает
+                                       турбо-режим, обеспечивая разгон тактовой
+                                       частоты до 5.6 ГГц. Наибольшее
+                                       тепловыделение центрального процессора
+                                       Intel Core i7-14700KF составляет 253 Вт,
+                                       поэтому ему нужна эффективная система
+                                       охлаждения для оптимизации рабочей
+                                       температуры. Совместимый кулер в
+                                       комплектацию не входит, поэтому вы
+                                       сможете выбрать этот модуль
+                                       самостоятельно. Интегрированное
+                                       графическое ядро не предусмотрено
+                                       конструкцией ЦПУ.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!-- конец выпадающего меню -->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="samsung">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Процессор Intel Core i9-14900KF OEM...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\i9.jpg"
+                           class="card-img-top"
+                           alt="Samsung"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 64 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#samsung-3"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <!-- выпадающее меню "подробнее"  -->
+                           <div class="collapse" id="samsung-3">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Процессор Intel Core i9-14900KF OEM –
+                                       оснащение для игровых компьютеров
+                                       экстра-класса и высокопроизводительных
+                                       универсальных ПК. Свободный множитель
+                                       гарантирует возможность штатного разгона
+                                       устройства. CPU имеет 24 ядра – 8
+                                       производительных и 16 энергоэффективных.
+                                       Процессор базируется на архитектуре Intel
+                                       Raptor Lake и произведен по техпроцессу
+                                       Intel 7. Устройство устанавливается в
+                                       сокет LGA 1700. Интегрированное видеоядро
+                                       отсутствует: необходима установка
+                                       графического адаптера. Процессор Intel
+                                       Core i9-14900KF OEM поддерживает до 32
+                                       потоков. Встроенный контроллер PCI-E 5.0
+                                       имеет 20 линий. Технология Intel GNA
+                                       ускоряет операции искусственного
+                                       интеллекта. Модель поддерживает
+                                       аппаратную виртуализацию. Она расширяет
+                                       функциональность компьютера при работе с
+                                       виртуальными машинами. Базовая частота
+                                       процессора – 3.2 ГГц. Максимальный
+                                       показатель в турборежиме – 6 ГГц.
+                                       Поддерживаются 2 типа оперативной памяти
+                                       – DDR4 и DDR5. Максимально допустимый
+                                       объем ОЗУ – 192 ГБ. Процессор
+                                       поставляется без кулера. Выбор системы
+                                       охлаждения зависит от тепловыделения
+                                       устройства. TDP процессора – 253 Вт.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!-- конец выпадающего меню -->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="samsung">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Процессор AMD Ryzen 5 7600X OEM...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\r5.jpg"
+                           class="card-img-top"
+                           alt="Samsung"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 22 499р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#samsung-4"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <!-- выпадающее меню "подробнее"  -->
+                           <div class="collapse" id="samsung-4">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Процессор AMD Ryzen 5 7600X OEM
+                                       поддерживает технологию виртуализации и
+                                       предназначен для установки в игровые ПК.
+                                       Он имеет 6-ядерную структуру, выполненную
+                                       на основе 5-нм техпроцесса, что ускоряет
+                                       обмен данными между ядрами и кэш-памятью,
+                                       снижает энергопотребление и увеличивает
+                                       производительность. Все операции
+                                       выполняются в 12 потоков, что исключает
+                                       зависания системы. Тактовая частота
+                                       процессора варьируется от 4.7 до 5.3 ГГц.
+                                       Благодаря свободному множителю частоту
+                                       можно еще увеличить, чтобы добиться
+                                       наибольшей мощности и производительности.
+                                       Процессор AMD Ryzen 5 7600X OEM имеет
+                                       встроенный контроллер PCI-E 5.0,
+                                       обеспечивающий высокую скорость обмена
+                                       данными при подключении различных
+                                       модулей. Конструкция процессора
+                                       предусматривает возможность подключения к
+                                       нему оперативной памяти формата
+                                       DDR5-5200, общий объем которой 128 ГБ.
+                                       Такие компоненты обеспечат быстродействие
+                                       компьютера при работе в многозадачном
+                                       режиме. Интегрированное графическое ядро
+                                       Radeon Graphics предусматривает высокое
+                                       качество изображения без подключения
+                                       дополнительной видеокарты. Тепловыделение
+                                       работающего процессора составляет 105 Вт.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!-- конец выпадающего меню -->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="samsung">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Процессор AMD Ryzen 7 7800X3D OEM...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\r7.jpg"
+                           class="card-img-top"
+                           alt="Samsung"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 45 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#samsung-5"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <!-- выпадающее меню "подробнее"  -->
+                           <div class="collapse" id="samsung-5">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       8-ядерный процессор AMD Ryzen 7 7800X3D
+                                       OEM – оснащение для игровых компьютеров и
+                                       производительных универсальных ПК для
+                                       дома или офиса. Модель базируется на
+                                       архитектуре AMD Zen 4 и произведена по
+                                       техпроцессу TSMC 5nm FinFET. Базовая
+                                       частота процессора – 4.2 ГГц. CPU
+                                       поддерживает до 16 потоков. В турборежиме
+                                       частота процессора может повышаться до 5
+                                       ГГц. Любые операции ускоряют
+                                       8-мегабайтный кэш L2 и 96-мегабайтный кэш
+                                       L3. Встроенный контроллер PCI Express
+                                       соответствует версии 5.0 и поддерживает
+                                       24 линии. Особенность процессора AMD
+                                       Ryzen 7 7800X3D OEM – наличие
+                                       интегрированного графического ядра. GPU
+                                       AMD Radeon Graphics работает на частотах
+                                       до 2200 МГц. Производительность
+                                       встроенной графики сопоставима с
+                                       быстродействием видеокарт среднего
+                                       класса. Процессор совместим с памятью
+                                       DDR5, объем которой ограничен 128 ГБ.
+                                       Максимальная частота ОЗУ – 5200 МГц.
+                                       Возможно использование модулей с
+                                       коррекцией ошибок. Процессор поддерживает
+                                       аппаратную виртуализацию. Это расширяет
+                                       функциональность ПК при работе с
+                                       виртуальными машинами. OEM-комплектация
+                                       модели означает отсутствие кулера.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!-- конец выпадающего меню -->
+                        </div>
+                     </div>
+                  </div>
+                  <!-- ячейка отдельного смартфона -->
+                  <div class="cellWithPhone" id="samsung">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Процессор AMD Ryzen 9 7950X3D OEM...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\r9.jpg"
+                           class="card-img-top"
+                           alt="Samsung"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 72 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#samsung-6"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <!-- выпадающее меню "подробнее"  -->
+                           <div class="collapse" id="samsung-6">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Процессор AMD Ryzen 9 7950X3D –
+                                       16-ядерный чипсет на базе архитектуры AMD
+                                       Raphael, который использует для
+                                       подключения к материнской плате сокет
+                                       AM5. Модель поддерживает одновременную
+                                       обработку до 32 вычислительных потоков
+                                       данных, благодаря чему система сможет
+                                       быстро запускать и поддерживать работу
+                                       ресурсоемких программ. Устройство
+                                       функционирует с тактовой частотой 4.2 ГГц
+                                       и поддерживает автоматический разгон до
+                                       5.7 ГГц при интенсивных нагрузках на
+                                       компьютерную сборку. Процессор AMD Ryzen
+                                       9 7950X3D может работать с оперативной
+                                       памятью DDR5-типа объемом до 128 ГБ.
+                                       Модель поддерживает режим ECC, что
+                                       позволит использовать ее в серверных
+                                       сборках с плашками ОЗУ с технологией
+                                       коррекции ошибок. Устройство
+                                       предусматривает интегрированное
+                                       графическое ядро AMD Radeon Graphics,
+                                       благодаря чему можно отказаться от
+                                       приобретения отдельной видеокарты. При
+                                       тепловыделении 120 Вт гарантируется
+                                       стабильная работа чипсета при температуре
+                                       нагрева до 89 °C.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!-- конец выпадающего меню -->
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cellWithPhone" id="apple">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Видеокарта MSI GeForce RTX 4070 Ti SUPER...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\4070.jpg"
+                           class="card-img-top"
+                           alt="iPhone"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">
+                              Цена: 113 499р
+                              <span class="badge badge-warning">-5%</span>
+                           </h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#apple-1"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="apple-1">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Видеокарта MSI GeForce RTX 4070 Ti SUPER
+                                       GAMING X SLIM WHITE [GeForce RTX 4070 Ti
+                                       SUPER 16G GAMING X SLIM WHITE] –
+                                       оснащение для мощного игрового
+                                       компьютера. Производительность модели
+                                       достаточна для использования большинства
+                                       видеоигр на максимальных настройках
+                                       графики. Главный компонент видеоадаптера
+                                       – графический процессор GeForce RTX 4070
+                                       Ti SUPER на основе микроархитектуры
+                                       NVIDIA Ada Lovelace. Его штатная частота
+                                       равна 2340 МГц, а турбочастота – 2685
+                                       МГц. Потенциал видеочипа раскрывает
+                                       скоростная 16-гигабайтная память GDDR6X с
+                                       пропускной способностью 672 ГБ/с. Обмен
+                                       данными между VRAM и GPU ускоряет
+                                       64-мегабайтный Infinity Cache. В
+                                       видеокарте MSI GeForce RTX 4070 Ti SUPER
+                                       GAMING X SLIM WHITE [GeForce RTX 4070 Ti
+                                       SUPER 16G GAMING X SLIM WHITE]
+                                       реализованы 66 ядер RT 3-го поколения и
+                                       264 тензорных ядра 4-го поколения.
+                                       Назначение первых – аппаратное ускорение
+                                       трассировки лучей, а вторых – увеличение
+                                       производительности при рендеринге.
+                                       Высокую частоту кадров поддерживают 8448
+                                       универсальных процессоров. Особенность
+                                       комплектации модели – наличие
+                                       поддерживающего кронштейна.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cellWithPhone" id="apple">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Видеокарта MSI GeForce RTX 4080 SUPER EXPERT...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\4080.jpg"
+                           class="card-img-top"
+                           alt="iPhone"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 141 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#apple-2"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="apple-2">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Видеокарта MSI GeForce RTX 4080 SUPER
+                                       EXPERT [912-V511-238] гарантирует
+                                       высочайшую производительность при
+                                       обработке сложной графики в любых
+                                       видеоиграх. Устройство предназначено для
+                                       оснащения мощных игровых компьютеров.
+                                       Главный элемент конструкции видеоадаптера
+                                       – графический процессор GeForce RTX 4080
+                                       SUPER. Он базируется на микроархитектуре
+                                       NVIDIA Ada Lovelace и произведен по
+                                       техпроцессу 5 нм. Штатная частота GPU
+                                       видеокарты MSI GeForce RTX 4080 SUPER
+                                       EXPERT [912-V511-238] равна 2295 МГц, а
+                                       турбочастота – 2625 МГц. 80 RT-ядер 3-го
+                                       поколения повышают производительность при
+                                       трассировке лучей. 10240 универсальных
+                                       процессоров гарантируют высокую частоту
+                                       кадров. 320 тензорных ядер 4-го поколения
+                                       ускоряют выполнение вычислений на основе
+                                       искусственного интеллекта. Потенциал GPU
+                                       реализует 16-гигабайтная память GDDR6X с
+                                       пропускной способностью 736 ГБ/с. Ее
+                                       эффективная частота – 23000 МГц.
+                                       Особенность системы охлаждения видеокарты
+                                       – расположение вентиляторов с обеих
+                                       сторон. Металлический бекплейт исключает
+                                       деформацию печатной платы.
+                                       Рекомендованная мощность источника
+                                       питания – от 850 Вт.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cellWithPhone" id="apple">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Видеокарта Palit GeForce RTX 4090 GameRock OC...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\4090.jpg"
+                           class="card-img-top"
+                           alt="iPhone"
+                           
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 234 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#apple-3"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="apple-3">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Видеокарта Palit GeForce RTX 4090
+                                       GameRock OC выделяется оригинальным
+                                       кристаллическим дизайном Starlight Black
+                                       и мерцающей подсветкой ARGB. Фирменная
+                                       утилита предлагает широкие возможности
+                                       настройки палитры оттенков, эффектов и
+                                       синхронизации. Графический адаптер с
+                                       микроархитектурой NVIDIA Ada Lovelace, 24
+                                       ГБ памяти стандарта GDDR6X и частотой до
+                                       2610 МГц в режиме разгона гарантирует
+                                       мощный потенциал для игр. Три вентилятора
+                                       Gale Hunter и пластины радиатора Y
+                                       Formula способствуют эффективному
+                                       рассеиванию тепла. Защитная пластина на
+                                       тыловой стороне повышает прочность всей
+                                       конструкции Palit GeForce RTX 4090
+                                       GameRock. Из интерфейсов с боковой
+                                       стороны предлагаются 3 разъема
+                                       DisplayPort и 1 разъем HDMI.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="apple">
+                     <div class="card shadow">
+                        <div
+                           class="card-header pb-0"
+                        >
+                           <h6 class="card-title">
+                              Видеокарта Sapphire AMD Radeon RX 7700 XT NITRO...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\7700.jpg"
+                           class="card-img-top"
+                           alt="iPhone"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 56 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#apple-4"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="apple-4">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Видеокарта Sapphire AMD Radeon RX 7700 XT
+                                       NITRO+ [11335-02] используется при сборке
+                                       и модернизации игровых компьютеров. Ее
+                                       производительность позволяет использовать
+                                       большинство игр на средних или высоких
+                                       настройках. Быстродействие видеоадаптера
+                                       обеспечивают графический процессор Radeon
+                                       RX 7700 XT на базе микроархитектуры AMD
+                                       RDNA 3 и 12 ГБ памяти GDDR6 с пропускной
+                                       способностью 432 ГБ/с. Скорость обмена
+                                       информацией между VRAM и GPU повышает
+                                       48-мегабайтный Infinity Cache. Видеокарта
+                                       Sapphire AMD Radeon RX 7700 XT NITRO+
+                                       [11335-02] охлаждается 3 осевыми
+                                       вентиляторами. Волнообразная конструкция
+                                       пластин радиатора упрощает прохождение
+                                       потока воздуха и снижает шум. Модель
+                                       совместима с утилитой Sapphire TriXX, с
+                                       помощью которой можно выбирать один из 2
+                                       режимов – производительный или тихий.
+                                       Видеоадаптер поддерживает разрешение до
+                                       7680x4320 (8K Ultra HD). Возможно
+                                       одновременное подключение 2, 3 или 4
+                                       мониторов. Для вывода изображения
+                                       используются порты HDMI и DisplayPort.
+                                       Энергопотребление модели не превышает 252
+                                       Вт. Производителем рекомендован блок
+                                       питания с мощностью от 700 Вт.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="apple">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Видеокарта PowerColor AMD Radeon RX 7800 XT
+                              Hell...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\7800.jpg"
+                           class="card-img-top"
+                           alt="iPhone"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 60 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#apple-5"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="apple-5">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Видеокарта PowerColor AMD Radeon RX 7800
+                                       XT Hellhound разработана для модернизации
+                                       игрового ПК. Она подключается через PCI-E
+                                       4.0, удваивая пропускную способность.
+                                       Компонент использует видеопамять GDDR6
+                                       объемом 16 ГБ. Это делает его незаменимым
+                                       для работы с приложениями, требующими
+                                       высокой производительности. Благодаря
+                                       поддержке технологии трассировки лучей
+                                       видеокарта создает реалистичные эффекты
+                                       за счет освещения, теней, преломления и
+                                       отражения. В результате пользователь
+                                       погружается в игровые миры. За тактовый
+                                       цикл система передает до 256 бит
+                                       информации, ускоряя отклик памяти на
+                                       действия пользователя. PowerColor AMD
+                                       Radeon RX 7800 XT Hellhound оснащена
+                                       тремя вентиляторами для мощного
+                                       охлаждения. Поэтому при максимальной
+                                       нагрузке поверхность карты не нагревается
+                                       выше допустимых показателей. Для
+                                       подключения к мониторам компонент
+                                       использует разъемы DisplayPort и HDMI.
+                                       Элементы видеокарты подсвечиваются
+                                       разными цветами.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="apple">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Видеокарта Sapphire AMD Radeon RX 7900 XTX NITRO...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\7900.jpg"
+                           class="card-img-top"
+                           alt="iPhone"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 137 499р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#apple-6"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="apple-6">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Видеокарта Sapphire AMD Radeon RX 7900
+                                       XTX NITRO+ Vapor-X [11322-01] – оснащение
+                                       для игровых компьютеров высокого класса.
+                                       Производительность модели достаточна для
+                                       использования большинства игр на
+                                       максимальных настройках графики.
+                                       Температурную стабильность видеоадаптера
+                                       при любых нагрузках гарантируют 3
+                                       вентилятора с поддержкой технологии
+                                       интеллектуального управления. Массивный
+                                       литой радиатор обеспечивает высокую
+                                       интенсивность отвода тепла от модуля VRM,
+                                       памяти и дросселей. Эффективность системы
+                                       охлаждения повышают композитные тепловые
+                                       трубки. Видеокарта Sapphire AMD Radeon RX
+                                       7900 XTX NITRO+ Vapor-X [11322-01]
+                                       базируется на графическом процессоре
+                                       Radeon RX 7900 XTX, штатная частота
+                                       которого равна 1900 МГц, а турбочастота –
+                                       2680 МГц. Возможности GPU раскрывают 24
+                                       ГБ памяти GDDR6 с пропускной способностью
+                                       960 ГБ/с и эффективной частотой 20000
+                                       МГц. Видеоадаптер поддерживает разрешение
+                                       до 7680x4320 (8K Ultra HD). Максимальное
+                                       энергопотребление устройства – 420 Вт.
+                                       Производителем рекомендуется блок питания
+                                       с мощностью от 800 Вт. Длина видеокарты –
+                                       320 мм.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="huawei">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Материнская плата MSI B760 GAMING PLUS WIFI...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\MSI B760.jpg"
+                           class="card-img-top"
+                           alt="Huawei"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 16 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#huawei-1"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="huawei-1">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Материнская плата MSI B760 GAMING PLUS
+                                       WIFI создана для геймеров и настроена на
+                                       достижение высокого вычислительного
+                                       потенциала. Она совместима с процессорами
+                                       Alder Lake и Raptor Lake от производителя
+                                       Intel. Плата оборудована 4 слотами DIMM,
+                                       которые позволяют задействовать до 192 ГБ
+                                       оперативной памяти поколения DDR5.
+                                       Наличие 5 слотов расширения PCI-E x16
+                                       предусматривает создание графической
+                                       системы из нескольких видеокарт. При
+                                       помощи 2 разъемов M.2 и 6 портов SATA
+                                       можно создать вместительное хранилище для
+                                       игр, мультимедийных файлов, программ и
+                                       документов. В плате реализован коннектор
+                                       2.5 Гбит/с для стабильного доступа к
+                                       Интернет по проводному соединению.
+                                       Интегрированный контроллер с поддержкой
+                                       Wi-Fi и Bluetooth предоставляет
+                                       возможность беспроводной синхронизации с
+                                       сетевым оборудованием, техникой и
+                                       мобильными устройствами. Отборные
+                                       протестированные компоненты и система
+                                       питания 14 фаз означают, что MSI B760
+                                       GAMING PLUS WIFI способна обеспечить
+                                       стабильную работу при разной нагрузке.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="huawei">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Материнская плата ASUS TUF GAMING B760-PLUS WIFI...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\ASUS TUF B760.jpg"
+                           class="card-img-top"
+                           alt="Huawei"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 19 499р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#huawei-2"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="huawei-2">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Материнская плата ASUS TUF GAMING
+                                       B760-PLUS WIFI выполнена в полноразмерном
+                                       форм-факторе Standard-ATX. С ее помощью
+                                       можно создать производительную аппаратную
+                                       платформу на основе процессора Intel Core
+                                       для работы, игр, разгона. Под установку
+                                       до 192 ГБ оперативной памяти DDR5
+                                       предлагаются 4 слота DIMM. Для дискретной
+                                       видеокарты есть по 2 слота расширения
+                                       PCI-E x16 и PCI-E x1. Вместительное
+                                       хранилище позволяют организовать 3
+                                       разъема M.2 и 4 порта SATA. Плата ASUS
+                                       TUF GAMING B760-PLUS WIFI оснащена
+                                       сетевым контроллером со скоростью 2.5
+                                       Гбит/с и модулем Wi-Fi 6 для доступа к
+                                       Интернету проводным и беспроводным
+                                       способом. За отведение тепла и
+                                       поддержание низкой температуры нагрева
+                                       отвечают алюминиевые радиаторы. Они
+                                       украшены желтыми декоративными надписями
+                                       и эмблемами серии TUF. Система питания
+                                       12+1 фаз и усиленные компоненты TUF
+                                       PROTECTION гарантируют стабильную работу
+                                       материнской платы.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="huawei">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Материнская плата ASRock B760 Pro RS...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\ASRock B760.png"
+                           class="card-img-top"
+                           alt="Huawei"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 15 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#huawei-3"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="huawei-3">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Материнская плата ASRock B760 Pro RS
+                                       способна обеспечить продуктивную и
+                                       стабильную работу в различных
+                                       требовательных программах. Она
+                                       принадлежит к профессиональной серии и
+                                       подходит для обслуживания рабочих
+                                       станций. Плата выполнена в полноразмерном
+                                       форм-факторе. Модель рассчитана на
+                                       установку процессора Intel 12/13/14-го
+                                       поколения. На плате расположены 4 слота
+                                       под установку оперативной памяти
+                                       стандарта DDR5, слоты расширения PCI-E
+                                       x16 и PCI-E x1 для графического адаптера,
+                                       3 разъема M.2 и 4 слота SATA для
+                                       накопителей. Соединение с Интернетом
+                                       выполняется при помощи сетевого адаптера
+                                       со скоростью 2.5 Гбит/с. С боковой
+                                       стороны предусмотрены порты USB,
+                                       видеовыходы DisplayPort и HDMI, разъемы
+                                       аудио. Надежные компоненты и стабильное
+                                       охлаждение гарантируют стабильность в
+                                       работе ASRock B760 Pro RS.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="huawei">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Материнская плата GIGABYTE B760 AORUS EL...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\GIGABYTE B760.jpg"
+                           class="card-img-top"
+                           alt="Huawei"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 21 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#huawei-4"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="huawei-4">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Материнская плата GIGABYTE B760 AORUS
+                                       ELITE AX сочетает оригинальный стиль,
+                                       функциональность и технологичность. Она
+                                       разработана для геймеров с высокими
+                                       требованиями к производительности и
+                                       стабильности. Плата соответствует
+                                       полноразмерному форм-фактору
+                                       Standard-ATX. Из особенностей модели – 4
+                                       слота под установку до 192 ГБ оперативной
+                                       памяти стандарта DDR5, 3 слота расширения
+                                       PCI-E x16 для графического адаптера, 3
+                                       разъема M.2 и 4 слота SATA для
+                                       накопителей. GIGABYTE B760 AORUS ELITE AX
+                                       оснащена сетевым адаптером со скоростью
+                                       2.5 Гбит/с и интегрированным модулем
+                                       беспроводной связи Wi-Fi/Bluetooth. На
+                                       плате размещены массивные охлаждающие
+                                       радиаторы в стиле линейки AORUS и
+                                       элементы с настраиваемой светодиодной
+                                       подсветкой RGB. Для управления
+                                       параметрами предусмотрены кнопки Q-Flash
+                                       Plus и перезагрузки.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="huawei">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Материнская плата ASUS TUF GAMING B650-PLUS WIFI...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\ASUS TUF GAMING B650.jpg"
+                           class="card-img-top"
+                           alt="Huawei"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 29 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#huawei-5"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="huawei-5">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Материнская плата ASUS TUF GAMING
+                                       B650-PLUS WIFI совместима с процессорами
+                                       AMD с разъемом AM5. Она выделяется
+                                       оригинальным оформлением с желтыми
+                                       декоративными элементами серии TUF и
+                                       крупными охлаждающими радиаторами для
+                                       эффективного рассеивания тепла. На плате
+                                       предусмотрены 4 слота под установку
+                                       оперативной памяти стандарта DDR5, 2
+                                       слота расширения PCI-E x16, 3 разъема M.2
+                                       и 4 порта SATA. ASUS TUF GAMING B650-PLUS
+                                       WIFI оснащена сетевым коннектором 2.5
+                                       Гбит/с и модулем беспроводной связи
+                                       (WI-FI 6 и Bluetooth 5.2). Материнская
+                                       плата выделяется эффективной системой
+                                       охлаждения с радиаторами и поддержкой
+                                       освещения RGB. Надежная элементная база
+                                       гарантирует стабильность в эксплуатации
+                                       комплектующей.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="huawei">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Материнская плата MSI MAG B650 TOMAHAWK WIFI...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\MSI MAG B650.jpg"
+                           class="card-img-top"
+                           alt="Huawei"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 29 199р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#huawei-6"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="huawei-6">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Материнская плата MSI MAG B650 TOMAHAWK
+                                       WIFI выделяется оформлением в
+                                       классическом стиле и мощными техническими
+                                       характеристиками. Модель в типоразмере
+                                       Stantard-ATX создана для компьютерных
+                                       энтузиастов. На плате предусмотрены 4
+                                       слота DIMM DDR5, слоты расширения PCI-E
+                                       x16 и PCI-E x1, 3 разъема M.2 и 6 слотов
+                                       SATA для подключения
+                                       высокопроизводительных комплектующих.
+                                       Контроллер 2.5 Гбит/с и интегрированный
+                                       модуль Wi-Fi обеспечивают стабильную
+                                       связь с Интернетом. Система с крупными
+                                       радиаторами способствует стабильному
+                                       охлаждению основных компонентов в разном
+                                       режиме вычислительной нагрузки. Из
+                                       преимуществ MSI MAG B650 TOMAHAWK –
+                                       кнопка Flash BIOS для простого управления
+                                       параметрами в системе BIOS.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="sony">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Оперативная память Crucial...
+                              <span class="badge badge-success">New</span>
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\Crucial.jpg"
+                           class="card-img-top"
+                           alt="Sony"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 12 899р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#sony-1"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="sony-1">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Оперативная память Crucial
+                                       [CT2K16G56C46U5] 32 ГБ способна
+                                       обеспечить высокую производительность при
+                                       обработке требовательных компьютерных
+                                       задач совместно с многоядерным
+                                       процессором. В комплекте поставляются два
+                                       модуля форм-фактора DIMM, каждый из
+                                       которых обладает емкостью 16 ГБ. Они
+                                       соответствуют поколению DDR5 и работают
+                                       на тактовой частоте 5600 МГц для
+                                       быстродействия программ. Технология
+                                       On-Die ECC обнаруживает и исправляет
+                                       битовые ошибки в микросхеме DRAM, что
+                                       повышает стабильность работы ОЗУ Crucial
+                                       [CT2K16G56C46U5]. Технология Power
+                                       Management IC на основе специальной
+                                       микросхемы контролирует и регулирует
+                                       энергопотребление.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="sony">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Оперативная память Kingston HyperX...
+                              <span class="badge badge-success">New</span>
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\HyperX.jpg"
+                           class="card-img-top"
+                           alt="Sony"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 9 099р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#sony-2"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="sony-2">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Оперативная память Kingston HyperX
+                                       Predator [HX448C19PB3K2/16] придаст вашей
+                                       системе больше отзывчивости и скорости
+                                       при запуске игр или ресурсоемких
+                                       приложений. Она выполнена в виде
+                                       комплекта из двух модулей по 8 ГБ,
+                                       которые работают на частоте 4800 МГц с
+                                       пропускной способностью PC38400 при
+                                       напряжении питания 1.5 В. Для защиты от
+                                       перегрева на модулях установлены
+                                       алюминиевые радиаторы, которые отличаются
+                                       эффективным теплоотводом и лаконичным
+                                       оформлением в черном цвете. Небольшая
+                                       высота модулей Kingston HyperX Predator
+                                       не вызывает сложностей при установке за
+                                       счет широкой совместимости с
+                                       комплектующими.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="sony">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Оперативная память Samsung...
+                              ГБ
+                              <span class="badge badge-success">New</span>
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\Samsung.jpg"
+                           class="card-img-top"
+                           alt="Sony"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 9 099р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#sony-3"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="sony-3">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Оперативная память Samsung
+                                       [M378A4G43AB2-CWE] обладает большой
+                                       емкостью – 32 ГБ. Благодаря этому, а
+                                       также высоким рабочим показателям данная
+                                       модель может стать отличным выбором для
+                                       использования в производительных игровых
+                                       и рабочих системах, обеспечивая высокий
+                                       уровень быстродействия и позволяя
+                                       комфортно решать практически любые
+                                       задачи. Кроме того, данный модуль
+                                       отличается высокой стабильностью работы и
+                                       устойчивостью к сбоям даже при
+                                       значительных нагрузках, что обусловлено
+                                       применением передовых технологий и
+                                       первоклассных компонентов в его
+                                       конструкции. Корпус оперативной памяти
+                                       Samsung [M378A4G43AB2-CWE] выполнен в
+                                       распространенном форм-факторе DIMM, за
+                                       счет чего отличается универсальностью и
+                                       совместим с широким рядом материнских
+                                       плат. Важной особенностью модели также
+                                       является ее небольшая высота – всего
+                                       31.25 мм, что сделает монтаж модуля
+                                       простым и более удобным. Напряжение
+                                       питания оперативной памяти не превышает
+                                       1.2 В. Поставка модуля осуществляется в
+                                       фирменной упаковке поштучно.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="sony">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Оперативная память ADATA XPG Lancer...
+                              <span class="badge badge-success">New</span>
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\ADATA.jpg"
+                           class="card-img-top"
+                           alt="Sony"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 12 799р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#sony-4"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="sony-4">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Оперативная память ADATA XPG Lancer –
+                                       комплект из двух модулей суммарным
+                                       объемом 32 ГБ. ОЗУ поколения DDR5 станет
+                                       стильным, мощным и надежным дополнением
+                                       технологичного игрового компьютера.
+                                       Модули функционируют на частоте 5600 МГц
+                                       и помогают существенно повысить
+                                       производительность аппаратной платформы.
+                                       Оперативная предусматривает разгон с
+                                       помощью профилей AMD EXPO и Intel XMP.
+                                       Для быстрого отведения тепла и
+                                       поддержания стабильности при различных
+                                       вычислительных нагрузках на модулях ADATA
+                                       XPG Lancer установлены стилизованные
+                                       алюминиевые радиаторы.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="sony">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Оперативная память AMD Radeon R9 Gamer...
+                              <span class="badge badge-success">New</span>
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\AMD.jpg"
+                           class="card-img-top"
+                           alt="Sony"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 4 099р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#sony-5"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="sony-5">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Оперативная память AMD Radeon R9 Gamer
+                                       Series [R9416G3206U2S-U] объемом 16 ГБ
+                                       представляет собой производительное
+                                       решение, которое отлично подойдет для
+                                       модернизации игровых систем и рабочих
+                                       станций. Данная модель отличается своими
+                                       возможностями, что позволит вывести
+                                       производительность системы на новый
+                                       уровень. Память основана на первоклассных
+                                       компонентах и материалах, что
+                                       обеспечивает высокие рабочие показатели,
+                                       а также надежность и отказоустойчивость.
+                                       Данная модель соответствует формату DIMM
+                                       и типу DDR4. Оперативная память AMD
+                                       Radeon R9 Gamer Series [R9416G3206U2S-U]
+                                       работает на тактовой частота в 3200 МГц с
+                                       пропускной способностью PC25600.
+                                       Благодаря этому, а также таймингам,
+                                       значения которых соответствуют
+                                       16-18-18-39, обеспечивается высокая
+                                       скорость обработки данных, что
+                                       положительно влияет на производительность
+                                       компьютера. Оперативная память AMD Radeon
+                                       R9 Gamer Series [R9416G3206U2S-U]
+                                       выполнена в корпусе 31.25 мм, что вместе
+                                       с продуманной конструкцией делает
+                                       установку быстрой и удобной. Напряжение
+                                       питания модели не превышает 1.35 В.
+                                       Комплект поставки включает в себя 1
+                                       планку AMD Radeon R9 Gamer Series. Для
+                                       достижения наилучших показателей
+                                       производительности рекомендуется
+                                       использовать парное число модулей памяти.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cellWithPhone" id="xiaomi">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              Системный блок Alienware Aurora R15...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\Alienware.jpg"
+                           class="card-img-top"
+                           alt="Xiaomi"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 1 753 998р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#xiaomi-1"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="xiaomi-1">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       Aurora R15 предлагает значительный
+                                       прирост в производительности благодаря
+                                       использованию процессора Intel Core 13-го
+                                       поколения и видеокарты из серии NVIDIA
+                                       GeForce RTX 40. О том, какие именно
+                                       модели ЦП и графического ускорителя будут
+                                       использованы, производитель пока не
+                                       сообщает.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="xiaomi">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              ПК ASUS ROG STRIX G13CH-51340F0560...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\STRIX G13CH.jpg"
+                           class="card-img-top"
+                           alt="Xiaomi"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 148 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#xiaomi-2"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="xiaomi-2">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       ПК ASUS ROG STRIX G13CH-51340F0560
+                                       оснащен 10-ядерным процессором Intel Core
+                                       i5-13400F с тактовой частотой 2.5 ГГц.
+                                       Чипсет предусматривает 6 производительных
+                                       и 4 энергоэффективных ядра, что вместе со
+                                       способностью обрабатывать до 16
+                                       вычислительных потоков информации
+                                       позволит системе справиться с запуском
+                                       игр с реалистичной графикой и работой в
+                                       режиме многозадачности. Дискретная
+                                       видеокарта NVIDIA GeForce RTX 4070 с 12
+                                       ГБ видеопамяти обеспечит комфортный
+                                       игровой процесс благодаря поддержке
+                                       трассировки лучей и технологии
+                                       сглаживания DLSS. ПК ASUS ROG STRIX
+                                       G13CH-51340F0560 предусматривает 16 ГБ
+                                       оперативной памяти, благодаря чему
+                                       гарантирована плавная работа браузера при
+                                       одновременном открытии множества вкладок.
+                                       SSD-накопитель емкостью 512 ГБ
+                                       гарантирует быструю загрузку системы и
+                                       запуск тяжелых файлов. В конструкции
+                                       корпуса присутствуют дополнительные
+                                       воздухозаборники для улучшенной
+                                       циркуляции воздуха и охлаждения
+                                       компонентов системы.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="xiaomi">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              ПК MSI MAG Infinite S3 13TC-853XRU...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\Infinite S3.jpg"
+                           class="card-img-top"
+                           alt="Xiaomi"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 84 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#xiaomi-3"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="xiaomi-3">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       ПК MSI MAG Infinite S3 13TC-853XRU стал
+                                       обладателем 10-ядерного процессора Intel
+                                       Core i5-13400F, обладающего повышенной
+                                       многопоточностью. Чипсет способен
+                                       одновременно обрабатывать до 16 потоков
+                                       данных, что делает модель отличным
+                                       вариантом для повседневной работы и
+                                       развлечений. В режиме многозадачности
+                                       устройство функционирует стабильно и без
+                                       подтормаживаний благодаря 16 ГБ
+                                       оперативной памяти DDR4. Дискретная
+                                       видеокарта NVIDIA GeForce RTX 3060 готова
+                                       продемонстрировать всю свою мощь в
+                                       популярных играх с реалистичной графикой.
+                                       ПК MSI MAG Infinite S3 13TC-853XRU
+                                       облачен в корпус с оптимизированной
+                                       вентиляцией, предусматривающей большие
+                                       воздухозаборные отверстия для легкого
+                                       притока воздуха к комплектующим.
+                                       Прозрачная боковая панель позволит
+                                       оценить всю красоту сборки с включенной
+                                       подсветкой. Она обладает богатой палитрой
+                                       оттенков и визуальных эффектов, благодаря
+                                       чему можно сделать внешний вид компьютера
+                                       уникальным.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cellWithPhone" id="xiaomi">
+                     <div class="card shadow">
+                        <div class="card-header pb-0">
+                           <h6 class="card-title">
+                              ПК ASUS ROG STRIX G15DS-R7600X0400...
+                           </h6>
+                        </div>
+                        <img
+                           src="..\app\static\images_product\STRIX G15DS.jpg"
+                           class="card-img-top"
+                           alt="Xiaomi"
+                        />
+                        <div class="card-body pt-0">
+                           <h6 class="card-text">Цена: 206 999р</h6>
+                           <hr />
+                           <div class="buttonsPanel">
+                              <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              <button
+                                 class="btn btn-secondary btn-sm"
+                                 type="button"
+                                 data-toggle="collapse"
+                                 data-target="#xiaomi-4"
+                                 aria-expanded="false"
+                              >
+                                 Подробнее
+                              </button>
+                           </div>
+                           <div class="collapse" id="xiaomi-4">
+                              <hr />
+                              <div class="card-text">
+                                 <ul>
+                                    <li>
+                                       ПК ASUS ROG STRIX G15DS-R7600X0400
+                                       предусматривает в своей конфигурации
+                                       дискретную видеокарту NVIDIA GeForce RTX
+                                       4070 с 12 ГБ видеопамяти с
+                                       программируемыми шейдерами, выделенными
+                                       ядрами для трассировки лучей и функциями
+                                       искусственного интеллекта для
+                                       реалистичной передачи отражений, теней и
+                                       освещения при прохождении игр. 6-ядерный
+                                       процессор AMD Ryzen 5 7600X способен
+                                       выполнять 12 вычислительных потоков
+                                       одновременно, что обеспечит стабильную
+                                       работу компьютера в многозадачном режиме.
+                                       В конфигурации ПК ASUS ROG STRIX
+                                       G15DS-R7600X0400 присутствует 16 ГБ
+                                       оперативной памяти, благодаря чему можно
+                                       без замедления системы вести потоковые
+                                       трансляции, играть и скроллить страницы в
+                                       Интернете. Хранение данных доверено
+                                       SSD-накопителю емкостью 512 ГБ с
+                                       ускоренным временем загрузки приложений.
+                                       Корпус обладает продуманной системой
+                                       вентиляции, благодаря которой горячие
+                                       компоненты системы не будут
+                                       перегреваться. Для удобства переноски
+                                       компьютера имеется встроенная ручка.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- пагинация -->
+               <div class="row paginations">
+                  <div
+                     class="btn-group"
+                     role="group"
+                     aria-label="Basic example"
+                  >
+                     <button type="button" class="btn btn-secondary disabled">
+                        &lt;&lt;
+                     </button>
+                     <button
+                        type="button"
+                        class="btn btn-info"
+                        onclick="window.location.href='home.html'"
+                     >
+                        1
+                     </button>
+                     <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onclick="window.location.href='home2.html'"
+                     >
+                        2
+                     </button>
+                     <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onclick="window.location.href='home3.html'"
+                     >
+                        3
+                     </button>
+                     <button type="button" class="btn btn-secondary">
+                        &gt;&gt;
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- футер сайта -->
+         <div class="row footerOfSite shadow">
+            Разработано Никитой Галуновым. 2024 ©
+         </div>
+      </div>
+      <style>
+         body{
+            overflow-x: hidden;
+         }
+         .phoneList {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 15px;
+         }
+         .phoneList img{
+            width: 200px;
+            height: 200px;
+            padding-top: 10px;
+         }
+         .wcart {
+         width: 50px;
+         height: auto;
+         }
+         .cellWithPhone{
+            display: flex;
+         }
+         .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .card-text{
+            padding-top: 20px;
+         }
+      </style>
+      <script
+         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+         crossorigin="anonymous"
+      ></script>
+      <!-- Code inject-->
+      <script>
+         const checkboxes = document.querySelectorAll("input[type=checkbox]");
+         checkboxes.forEach((elem) => {
+            elem.click();
+         });
+      </script>
+   </body>
+</html>

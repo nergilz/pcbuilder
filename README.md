@@ -4,24 +4,24 @@
 
 для запуска 
 клонируем репозиторий 
-```
-git clone https://github.com/nergilz/pcbuilder.git
+```bash
+$ git clone https://github.com/nergilz/pcbuilder.git
 ```
 
 запуск оружения
-```
-python3 venv pcbuilderenv
-source pcbuilderenv/bin/activate
+```bash
+$ python3 venv pcbuilderenv
+$ source pcbuilderenv/bin/activate
 ```
 
 установка зависимостей
-```
-pip install -r requirements.txt
+```bash
+$ pip install -r requirements.txt
 ```
 
 запуск сервера
-```
-python3 manage.py runserver
+```bash
+$ python3 manage.py runserver
 ```
 
 админка
